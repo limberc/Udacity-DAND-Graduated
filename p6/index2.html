@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Titanic Data Visualization</title>
+  <meta name="author" content="Maria Schreiber" />
+  <meta name="description" content="Visualization of Titanic Passenger Data" />
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="tita_style.css" type="text/css" />
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.1.6/dimple.latest.js"></script>
+  <!-- <script src="http://dimplejs.org/dist/dimple.v2.2.0.min.js"></script> -->
+  <script type="text/javascript">
+
+  function draw_demograph_g(data) {
+
+    /*D3.js setup code*/
+
+    scaler = 0.5
+    "use strict";
+    var margin = 40,
+    width = 800 * scaler,
+    height = 600 * scaler;
+
+    var svg_gender = d3.select("#demo_container_g")
+    .append("svg")
+    .attr("width", width + margin)
+    .attr("height", height + margin)
+    .append('g')
+    .attr('class','chart')
+
+    /*Dimple.js Chart construction code*/
+
+    /* Gender Breakdown */
+    var myChart = new dimple.chart(svg_gender, data);
+    var x = myChart.addCategoryAxis("x", ["gender"]);
+    var y = myChart.addMeasureAxis('y','#');
+    /* Axis titles */
+    x.title = "Gender";
+    x.addOrderRule(['male', "female"]);
+    y.title = "Number of Passengers";
+    y.showGridlines = false;
+    var mySeries = myChart.addSeries(null, dimple.plot.bar);
+    mySeries.aggregate = dimple.aggregateMethod.count;
+
+    // Handle the hover event - overriding the default behaviour
+    mySeries.addEventHandler("mouseover", onHover);
+    // Handle the leave event - overriding the default behaviour
+    mySeries.addEventHandler("mouseleave", onLeave);
+
+    myChart.draw();
+    svg_gender.append("text").attr("x", myChart._xPixels() + myChart._widthPixels() / 2).attr("y", myChart._yPixels() - 20)
+    .style("text-anchor", "middle").style("font-family", "sans-serif")
+    .style("font-weight", "bold").text("Gender Breakdown");
+
+    // Event to handle mouse enter
+    function onHover(e) {
+
+      // Get the properties of the selected shape
+      var cx = parseFloat(e.selectedShape.attr("x")),
+      cy = parseFloat(e.selectedShape.attr("y"));
+
+      // Set the size and position of the popup
+      var width = 130,
+      height = 50,
+      x = cx-2;
+      y = (cy - height / 2 < 0 ?
+        15 :
+        cy - height / 2);
+
+      // Create a group for the popup objects
+      popup = svg_gender.append("g");
+
+      // Add a rectangle surrounding the text
+      popup
+      .append("rect")
+      .attr("x", x + 5)
+      .attr("y", y - 5)
+      .attr("width", width)
+      .attr("height", height)
+      .attr("rx", 5)
+      .attr("ry", 5)
+      .style("fill", 'white')
+      .style("stroke", 'black')
+      .style("stroke-width", 1);
+
+      // Add multiple lines of text
+      popup
+      .append('text')
+      .attr('x', x + 10)
+      .attr('y', y + 10)
+      .append('tspan')
+      .attr('x', x + 10)
+      .attr('y', y + 20)
+      .text('Gender: ' + e.xValue)
+      .style("font-family", "sans-serif")
+      .style("font-size", 10)
+      .append('tspan')
+      .attr('x', x + 10)
+      .attr('y', y + 40)
+      .text('Number of passengers: ' + e.yValue)
+      .style("font-family", "sans-serif")
+      .style("font-size", 10)
+    }
+
+      // Event to handle mouse exit
+      function onLeave(e) {
+      // Remove the popup
+      if (popup !== null) {
+        popup.remove();
+      }
+    };
+  };
+
+  function draw_demograph_c(data) {
+
+
+    /*D3.js setup code*/
+    scaler = 0.5
+    "use strict";
+    var margin = 40,
+    width = 800 * scaler,
+    height = 600 * scaler;
+
+    var svg_class = d3.select("#demo_container_c")
+    .append("svg")
+    .attr("width", width + margin)
+    .attr("height", height + margin)
+    .append('g')
+    .attr('class','chart');
+
+    /* Class Breakdown*/
+    var myChart = new dimple.chart(svg_class, data);
+    var x = myChart.addCategoryAxis("x", ["class"]);
+    var y = myChart.addMeasureAxis('y','#');
+    x.addOrderRule("class");
+    x.title = "Ticket Class";
+    x.addOrderRule(['first', "second", "third"]);
+    y.title = "Number of Passengers";
+    y.showGridlines = false;
+    var mySeries = myChart.addSeries(null, dimple.plot.bar);
+    mySeries.aggregate = dimple.aggregateMethod.count;
+  // Handle the hover event - overriding the default behaviour
+  mySeries.addEventHandler("mouseover", onHover);
+  // Handle the leave event - overriding the default behaviour
+  mySeries.addEventHandler("mouseleave", onLeave);
+  myChart.draw();
+  svg_class.append("text").attr("x", myChart._xPixels() + myChart._widthPixels() / 2).attr("y", myChart._yPixels() - 20)
+  .style("text-anchor", "middle").style("font-family", "sans-serif")
+  .style("font-weight", "bold").text("Class Breakdown");
+
+  // Event to handle mouse enter
+  function onHover(e) {
+
+    // Get the properties of the selected shape
+    var cx = parseFloat(e.selectedShape.attr("x")),
+    cy = parseFloat(e.selectedShape.attr("y"));
+
+    // Set the size and position of the popup
+    var width = 130,
+    height = 50,
+    x = cx-2;
+    y = (cy - height / 2 < 0 ?
+      15 :
+      cy - height / 2);
+
+    // Create a group for the popup objects
+    popup = svg_class.append("g");
+
+    // Add a rectangle surrounding the text
+    popup
+    .append("rect")
+    .attr("x", x + 5)
+    .attr("y", y - 5)
+    .attr("width", width)
+    .attr("height", height)
+    .attr("rx", 5)
+    .attr("ry", 5)
+    .style("fill", 'white')
+    .style("stroke", 'black')
+    .style("stroke-width", 1);
+
+    // Add multiple lines of text
+    popup
+    .append('text')
+    .attr('x', x + 10)
+    .attr('y', y + 10)
+    .append('tspan')
+    .attr('x', x + 10)
+    .attr('y', y + 20)
+    .text('Ticket class: ' + e.xValue)
+    .style("font-family", "sans-serif")
+    .style("font-size", 10)
+    .append('tspan')
+    .attr('x', x + 10)
+    .attr('y', y + 40)
+    .text('Number of passengers: ' + e.yValue)
+    .style("font-family", "sans-serif")
+    .style("font-size", 10)
+  }
+
+  // Event to handle mouse exit
+  function onLeave(e) {
+    // Remove the popup
+    if (popup !== null) {
+      popup.remove();
+    }
+  };
+};
+
+function draw_demograph_p(data) {
+
+  /*D3.js setup code*/
+
+  scaler = 0.5
+  "use strict";
+  var margin = 40,
+  width = 800 * scaler,
+  height = 600 * scaler;
+
+  var svg_port = d3.select("#demo_container_p")
+  .append("svg")
+  .attr("width", width + margin)
+  .attr("height", height + margin)
+  .append('g')
+  .attr('class','chart');
+
+
+  /* Port Breakdown */
+  var myChart = new dimple.chart(svg_port, data);
+  var x = myChart.addCategoryAxis("x",['embarked']); 
+  var y = myChart.addMeasureAxis('y','#');
+  x.title = "Port of Embarkment";
+  y.title = "Number of Passengers";
+  y.showGridlines = false;
+  var mySeries = myChart.addSeries(null, dimple.plot.bar);
+  mySeries.aggregate = dimple.aggregateMethod.count;
+// Handle the hover event - overriding the default behaviour
+mySeries.addEventHandler("mouseover", onHover);
+// Handle the leave event - overriding the default behaviour
+mySeries.addEventHandler("mouseleave", onLeave);
+myChart.draw();
+mySeries.shapes.style("opacity", function (d) {
+  return (d.yValue === "unknown" ? 0 : 0.8);
+});
+x.shapes.selectAll("text").attr("transform",
+  function (tita_data) {
+    return d3.select(this).attr("transform") + " translate(35, 89)" + "rotate(-90)";
+  });
+svg_port.append("text").attr("x", myChart._xPixels() + myChart._widthPixels() / 2).attr("y", myChart._yPixels() - 20)
+.style("text-anchor", "middle").style("font-family", "sans-serif")
+.style("font-weight", "bold").text("Port of Embarkment Breakdown");
+
+// Event to handle mouse enter
+function onHover(e) {
+
+// Get the properties of the selected shape
+var cx = parseFloat(e.selectedShape.attr("x")),
+cy = parseFloat(e.selectedShape.attr("y"));
+
+// Set the size and position of the popup
+var width = 130,
+height = 50,
+x = cx-2;
+y = (cy - height / 2 < 0 ?
+  15 :
+  cy - height / 2);
+
+// Create a group for the popup objects
+popup = svg_port.append("g");
+
+// Add a rectangle surrounding the text
+popup
+.append("rect")
+.attr("x", x + 5)
+.attr("y", y - 5)
+.attr("width", width)
+.attr("height", height)
+.attr("rx", 5)
+.attr("ry", 5)
+.style("fill", 'white')
+.style("stroke", 'black')
+.style("stroke-width", 1);
+
+// Add multiple lines of text
+popup
+.append('text')
+.attr('x', x + 10)
+.attr('y', y + 10)
+.append('tspan')
+.attr('x', x + 10)
+.attr('y', y + 20)
+.text('Port: ' + e.xValue)
+.style("font-family", "sans-serif")
+.style("font-size", 10)
+.append('tspan')
+.attr('x', x + 10)
+.attr('y', y + 40)
+.text('Number of passengers: ' + e.yValue)
+.style("font-family", "sans-serif")
+.style("font-size", 10)
+}
+
+// Event to handle mouse exit
+function onLeave(e) {
+// Remove the popup
+if (popup !== null) {
+  popup.remove();
+}
+};
+};
+
+function draw_demograph_a(data) {
+
+  /*D3.js setup code*/
+
+  scaler = 0.5
+  "use strict";
+  var margin = 40,
+  width = 800 * scaler,
+  height = 600 * scaler;
+
+  var svg_age = d3.select("#demo_container_a")
+  .append("svg")
+  .attr("width", width*1.5 + margin*2)
+  .attr("height", height + margin)
+  .append('g')
+  .attr('class','chart');
+
+
+  /* Age Breakdown */
+  var myChart = new dimple.chart(svg_age, data);
+  var x = myChart.addCategoryAxis("x",['age_bin']); 
+  var y = myChart.addMeasureAxis('y','#');
+  x.title = "Age";
+  x.addOrderRule(['< 11', "11 to 20", "21 to 30", "31 to 40", "41 to 50", "51 to 60", "61 to 80", "unknown"]);
+  y.title = "Number of Passengers";
+  y.showGridlines = false;
+  var mySeries = myChart.addSeries(null, dimple.plot.bar);
+  mySeries.aggregate = dimple.aggregateMethod.count;
+// Handle the hover event - overriding the default behaviour
+mySeries.addEventHandler("mouseover", onHover);
+// Handle the leave event - overriding the default behaviour
+mySeries.addEventHandler("mouseleave", onLeave);
+myChart.draw();
+svg_age.append("text").attr("x", myChart._xPixels() + myChart._widthPixels() / 2).attr("y", myChart._yPixels() - 20)
+.style("text-anchor", "middle").style("font-family", "sans-serif")
+.style("font-weight", "bold").text("Age Breakdown");
+
+// Event to handle mouse enter
+function onHover(e) {
+
+// Get the properties of the selected shape
+var cx = parseFloat(e.selectedShape.attr("x")),
+cy = parseFloat(e.selectedShape.attr("y"));
+
+// Set the size and position of the popup
+var width = 130,
+height = 50,
+x = cx-4;
+y = (cy - height / 2 < 0 ?
+  15 :
+  cy - height / 2);
+
+// Create a group for the popup objects
+popup = svg_age.append("g");
+
+// Add a rectangle surrounding the text
+popup
+.append("rect")
+.attr("x", x + 5)
+.attr("y", y - 5)
+.attr("width", width)
+.attr("height", height)
+.attr("rx", 5)
+.attr("ry", 5)
+.style("fill", 'white')
+.style("stroke", 'black')
+.style("stroke-width", 1);
+
+// Add multiple lines of text
+popup
+.append('text')
+.attr('x', x + 10)
+.attr('y', y + 10)
+.append('tspan')
+.attr('x', x + 10)
+.attr('y', y + 20)
+.text('Age: ' + e.xValue)
+.style("font-family", "sans-serif")
+.style("font-size", 10)
+.append('tspan')
+.attr('x', x + 10)
+.attr('y', y + 40)
+.text('Number of passengers: ' + e.yValue)
+.style("font-family", "sans-serif")
+.style("font-size", 10)
+}
+
+// Event to handle mouse exit
+function onLeave(e) {
+// Remove the popup
+if (popup !== null) {
+  popup.remove();
+}
+};
+
+};
+
+function draw_demograph_f(data) {
+
+  /*D3.js setup code*/
+
+  scaler = 0.5
+  "use strict";
+  var margin = 40,
+  width = 800 * scaler,
+  height = 600 * scaler;
+
+  var svg_fam = d3.select("#demo_container_f")
+  .append("svg")
+  .attr("width", width*1.5 + margin*2)
+  .attr("height", height + margin)
+  .append('g')
+  .attr('class','chart');  
+
+  /* Family Breakdown */
+  var myChart = new dimple.chart(svg_fam, data);
+  var x = myChart.addCategoryAxis("x",['family']); 
+  var y = myChart.addMeasureAxis('y','#');
+  x.title = "Family Members Aboard";
+  x.addOrderRule(['none', 'one', 'two', 'three', 'four', 'five', 'six', 'seven']);
+  y.title = "Number of Passengers";
+  y.showGridlines = false;
+  var mySeries = myChart.addSeries(null, dimple.plot.bar);
+  mySeries.aggregate = dimple.aggregateMethod.count;
+// Handle the hover event - overriding the default behaviour
+mySeries.addEventHandler("mouseover", onHover);
+// Handle the leave event - overriding the default behaviour
+mySeries.addEventHandler("mouseleave", onLeave);
+myChart.draw();
+svg_fam.append("text").attr("x", myChart._xPixels() + myChart._widthPixels() / 2).attr("y", myChart._yPixels() - 20)
+.style("text-anchor", "middle").style("font-family", "sans-serif")
+.style("font-weight", "bold").text("Family Breakdown");
+
+// Event to handle mouse enter
+function onHover(e) {
+
+// Get the properties of the selected shape
+var cx = parseFloat(e.selectedShape.attr("x")),
+cy = parseFloat(e.selectedShape.attr("y"));
+
+// Set the size and position of the popup
+var width = 130,
+height = 50,
+x = cx-4;
+y = (cy - height / 2 < 0 ?
+  15 :
+  cy - height / 2);
+
+// Create a group for the popup objects
+popup = svg_fam.append("g");
+
+// Add a rectangle surrounding the text
+popup
+.append("rect")
+.attr("x", x + 5)
+.attr("y", y - 5)
+.attr("width", width)
+.attr("height", height)
+.attr("rx", 5)
+.attr("ry", 5)
+.style("fill", 'white')
+.style("stroke", 'black')
+.style("stroke-width", 1);
+
+// Add multiple lines of text
+popup
+.append('text')
+.attr('x', x + 10)
+.attr('y', y + 10)
+.append('tspan')
+.attr('x', x + 10)
+.attr('y', y + 20)
+.text('Family Members: ' + e.xValue)
+.style("font-family", "sans-serif")
+.style("font-size", 10)
+.append('tspan')
+.attr('x', x + 10)
+.attr('y', y + 40)
+.text('Number of passengers: ' + e.yValue)
+.style("font-family", "sans-serif")
+.style("font-size", 10)
+}
+
+// Event to handle mouse exit
+function onLeave(e) {
+// Remove the popup
+if (popup !== null) {
+  popup.remove();
+}
+};
+};
+
+
+
+
+function draw_survivors(data) {
+
+ /*D3.js setup code*/
+
+ scaler = 0.5
+ "use strict";
+ var margin = 40,
+ width = 800 * scaler,
+ height = 600 * scaler;
+
+ var svg_gender = d3.select("#surv_container")
+ .append("svg")
+ .attr("width", width + margin)
+ .attr("height", height + margin)
+ .append('g')
+ .attr('class','chart')
+
+ var svg_class = d3.select("#surv_container")
+ .append("svg")
+ .attr("width", width + margin)
+ .attr("height", height + margin)
+ .append('g')
+ .attr('class','chart');
+
+ var svg_port = d3.select("#surv_container")
+ .append("svg")
+ .attr("width", width + margin)
+ .attr("height", height + margin)
+ .append('g')
+ .attr('class','chart');
+
+ var svg_age = d3.select("#surv_container")
+ .append("svg")
+ .attr("width", width*1.5 + margin*2)
+ .attr("height", height + margin)
+ .append('g')
+ .attr('class','chart');
+
+ var svg_fam = d3.select("#surv_container")
+ .append("svg")
+ .attr("width", width*1.5 + margin*2)
+ .attr("height", height + margin);
+
+ /*Dimple.js Chart construction code*/
+
+ /* Gender Breakdown */
+ var myChart = new dimple.chart(svg_gender, data);
+ var x = myChart.addCategoryAxis("x", ["gender"]);
+ x.addOrderRule(['male', "female"]);
+ var y = myChart.addMeasureAxis("y",['#']);
+ /* Axis titles */
+ x.title = "Gender";
+ y.title = "Number of Passengers";
+ y.showGridlines = false;
+ var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+ mySeries.aggregate = dimple.aggregateMethod.count;
+ mySeries.addOrderRule(['survived', 'perished'])
+ myChart.addLegend(60, 10, 350, 20, "right");
+ myChart.draw();
+ svg_gender.append("text").attr("x", 40).attr("y", myChart._yPixels() - 20)
+ .style("text-anchor", "left").style("font-family", "sans-serif")
+ .style("font-weight", "bold").text("Gender/Survivor Breakdown");
+      mySeries.addEventHandler("mouseover", function (e){
+                // Draw the text information
+                svg_gender.selectAll(".dimple-hover-text")
+                  .data([e.xValue, d3.format(",.f")(e.yValue)])
+                    .enter()
+                    .append("text")
+                    .attr("class", "dimple-hover-text")
+    // Set the x and y positions of your tooltip 
+                    .attr("x", 200) 
+                    .attr("y", function (d, i) { return myChart._yPixels() + 20 + i * 25; })
+   //desired font style                    
+                    .style("font-family", "courier new") 
+                    .style("text-anchor", "end")
+   //desired font-size
+                    .style("font-size", "30px")   
+  //desired font-color    
+    
+                    .style("pointer-events", "none")
+                    .text(function (d) { return d; });//the text to be displayed, taken from .data()
+
+              });
+
+              // Clear the text on exit
+              mySeries.addEventHandler("mouseleave", function (e) {
+                svg_gender.selectAll(".dimple-hover-text").remove();
+              });
+
+ /* Class Breakdown*/
+ var myChart = new dimple.chart(svg_class, data);
+ var x = myChart.addCategoryAxis("x", ["class"]);
+ var y = myChart.addMeasureAxis('y','#');
+ x.addOrderRule("class");
+ x.title = "Ticket Class";
+ x.addOrderRule(['first', "second", "third"]);
+ y.title = "Number of Passengers";
+ y.showGridlines = false;
+ var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+ mySeries.aggregate = dimple.aggregateMethod.count;
+ mySeries.addOrderRule(['survived', 'perished'])
+ myChart.addLegend(60, 10, 350, 20, "right");
+ myChart.draw();
+ svg_class.append("text").attr("x", 40).attr("y", myChart._yPixels() - 20)
+ .style("text-anchor", "left").style("font-family", "sans-serif")
+ .style("font-weight", "bold").text("Class/Survivor Breakdown");
+
+ /* Port Breakdown */
+ var myChart = new dimple.chart(svg_port, data);
+ var x = myChart.addCategoryAxis("x",['embarked']); 
+ var y = myChart.addMeasureAxis('y','#');
+ x.title = "Port of Embarkment";
+ y.title = "Number of Passengers";
+ y.showGridlines = false;
+ var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+ mySeries.aggregate = dimple.aggregateMethod.count;
+ mySeries.addOrderRule(['survived', 'perished'])
+ myChart.addLegend(60, 10, 350, 20, "right");
+ myChart.draw();
+ x.shapes.selectAll("text").attr("transform",
+  function (tita_data) {
+    return d3.select(this).attr("transform") + " translate(35, 89)" + "rotate(-90)";
+  });
+ svg_port.append("text").attr("x", 40).attr("y", myChart._yPixels() - 20)
+ .style("text-anchor", "left").style("font-family", "sans-serif")
+ .style("font-weight", "bold").text("Port/Survivor Breakdown");
+
+ /* Age Breakdown */
+ var myChart = new dimple.chart(svg_age, data);
+ var x = myChart.addCategoryAxis("x",['age_bin']); 
+ var y = myChart.addMeasureAxis('y','#');
+ x.addOrderRule(['< 11', "11 to 20", "21 to 30", "31 to 40", "41 to 50", "51 to 60", "61 to 80", "unknown"]);
+ x.title = "Age";
+ y.title = "Number of Passengers";
+ y.showGridlines = false;
+ var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+ mySeries.aggregate = dimple.aggregateMethod.count;
+ mySeries.addOrderRule(['survived', 'perished'])
+ myChart.addLegend(60, 10, 623, 20, "right");
+ myChart.draw();
+ svg_age.append("text").attr("x", 40).attr("y", myChart._yPixels() - 20)
+ .style("text-anchor", "left").style("font-family", "sans-serif")
+ .style("font-weight", "bold").text("Age/Survivor Breakdown");
+
+
+ /* Family Breakdown */
+ var myChart = new dimple.chart(svg_fam, data);
+ var x = myChart.addCategoryAxis("x",['family']); 
+ var y = myChart.addMeasureAxis('y','#');
+ x.title = "Family Members Aboard";
+ x.addOrderRule(['none', 'one', 'two', 'three', 'four', 'five', 'six', 'seven']);
+ y.title = "Number of Passengers";
+ y.showGridlines = false;
+ var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+ mySeries.aggregate = dimple.aggregateMethod.count;
+ mySeries.addOrderRule(['survived', 'perished'])
+ myChart.addLegend(60, 10, 570, 20, "right");
+ myChart.draw();
+ svg_fam.append("text").attr("x", 40).attr("y", myChart._yPixels() - 20)
+ .style("text-anchor", "left").style("font-family", "sans-serif")
+ .style("font-weight", "bold").text("Family/Survivor Breakdown");
+
+};
+
+function draw_survivors_pct(data) {
+   /*
+        D3.js setup code
+        */
+        scaler = 0.5
+        "use strict";
+        var margin = 40,
+        width = 800 * scaler,
+        height = 600 * scaler;
+
+        var svg_gender = d3.select("#prc_container")
+        .append("svg")
+        .attr("width", width + margin)
+        .attr("height", height + margin)
+        .append('g')
+        .attr('class','chart')
+
+        var svg_class = d3.select("#prc_container")
+        .append("svg")
+        .attr("width", width + margin)
+        .attr("height", height + margin)
+        .append('g')
+        .attr('class','chart');
+
+        var svg_port = d3.select("#prc_container")
+        .append("svg")
+        .attr("width", width + margin)
+        .attr("height", height + margin)
+        .append('g')
+        .attr('class','chart');
+
+        var svg_age = d3.select("#prc_container")
+        .append("svg")
+        .attr("width", width*1.5 + margin*2)
+        .attr("height", height + margin)
+        .append('g')
+        .attr('class','chart');
+
+        var svg_fam = d3.select("#prc_container")
+        .append("svg")
+        .attr("width", width*1.5 + margin*2)
+        .attr("height", height + margin);
+
+        /*Dimple.js Chart construction code*/
+
+        /* Gender Breakdown */
+        var myChart = new dimple.chart(svg_gender, data);
+        var x = myChart.addCategoryAxis("x", ["gender"]);
+        x.addOrderRule(['male', "female"]);
+        var y = myChart.addPctAxis("y",['#']);
+        /* Axis titles */
+        x.title = "Gender";
+        y.title = "Number of Passengers";
+        y.showGridlines = false;
+        var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+        mySeries.aggregate = dimple.aggregateMethod.count;
+        mySeries.addOrderRule(['survived', 'perished'])
+        myChart.addLegend(60, 10, 350, 20, "right");
+        myChart.draw();
+        svg_gender.append("text").attr("x", 60).attr("y", myChart._yPixels() - 20)
+        .style("text-anchor", "left").style("font-family", "sans-serif")
+        .style("font-weight", "bold").text("Gender Survivor %");
+
+        /* Class Breakdown*/
+        var myChart = new dimple.chart(svg_class, data);
+        var x = myChart.addCategoryAxis("x", ["class"]);
+        var y = myChart.addPctAxis('y','#');
+        x.addOrderRule("class");
+        x.title = "Ticket Class";
+        x.addOrderRule(['first', "second", "third"]);
+        y.title = "Number of Passengers";
+        y.showGridlines = false;
+        var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+        mySeries.aggregate = dimple.aggregateMethod.count;
+        mySeries.addOrderRule(['survived', 'perished'])
+        myChart.addLegend(60, 10, 350, 20, "right");
+        myChart.draw();
+        svg_class.append("text").attr("x",60).attr("y", myChart._yPixels() - 20)
+        .style("text-anchor", "left").style("font-family", "sans-serif")
+        .style("font-weight", "bold").text("Class Survivor %");
+
+        /* Port Breakdown */
+        var myChart = new dimple.chart(svg_port, data);
+        var x = myChart.addCategoryAxis("x",['embarked']); 
+        var y = myChart.addPctAxis('y','#');
+        x.title = "Port of Embarkment";
+        y.title = "Number of Passengers";
+        y.showGridlines = false;
+        var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+        mySeries.aggregate = dimple.aggregateMethod.count;
+        mySeries.addOrderRule(['survived', 'perished'])
+        myChart.addLegend(60, 10, 350, 20, "right");
+        myChart.draw();
+        x.shapes.selectAll("text").attr("transform",
+          function (tita_data) {
+            return d3.select(this).attr("transform") + " translate(35, 89)" + "rotate(-90)";
+          });
+        svg_port.append("text").attr("x",60).attr("y", myChart._yPixels() - 20)
+        .style("text-anchor", "left").style("font-family", "sans-serif")
+        .style("font-weight", "bold").text("Port Survivor %");
+
+        /* Age Breakdown */
+        var myChart = new dimple.chart(svg_age, data);
+        var x = myChart.addCategoryAxis("x",['age_bin']); 
+        var y = myChart.addPctAxis('y','#');
+        x.addOrderRule(['< 11', "11 to 20", "21 to 30", "31 to 40", "41 to 50", "51 to 60", "61 to 80", "unknown"]);
+        x.title = "Age";
+        y.title = "Number of Passengers";
+        y.showGridlines = false;
+        var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+        mySeries.aggregate = dimple.aggregateMethod.count;
+        mySeries.addOrderRule(['survived', 'perished'])
+        myChart.addLegend(60, 10, 625, 20, "right");
+        myChart.draw();
+        svg_age.append("text").attr("x", 60).attr("y", myChart._yPixels() - 20)
+        .style("text-anchor", "left").style("font-family", "sans-serif")
+        .style("font-weight", "bold").text("Age Survivor %");
+
+        /* Family Breakdown */
+        var myChart = new dimple.chart(svg_fam, data);
+        var x = myChart.addCategoryAxis("x",['family']); 
+        var y = myChart.addPctAxis('y','#');
+        x.title = "Family Members Aboard";
+        x.addOrderRule(['none', 'one', 'two', 'three', 'four', 'five', 'six', 'seven']);
+        y.title = "Number of Passengers";
+        y.showGridlines = false;
+        var mySeries = myChart.addSeries('survived', dimple.plot.bar);
+        mySeries.aggregate = dimple.aggregateMethod.count;
+        mySeries.addOrderRule(['survived', 'perished'])
+        myChart.addLegend(60, 10, 570, 20, "right");
+        myChart.draw();
+        svg_fam.append("text").attr("x", 60).attr("y", myChart._yPixels() - 20)
+        .style("text-anchor", "left").style("font-family", "sans-serif")
+        .style("font-weight", "bold").text("Family Survivor %");
+
+      };
+
+      function draw_sh(data) {
+   /*
+        D3.js setup code
+        */
+        scaler = 0.5
+        "use strict";
+        var margin = 40,
+        width = 800 * scaler,
+        height = 600 * scaler;
+
+        var svg_gender = d3.select("#sh_container")
+        .append("svg")
+        .attr("width", width + margin)
+        .attr("height", height + margin)
+        .append('g')
+        .attr('class','chart')
+
+        var svg_class = d3.select("#sh_container")
+        .append("svg")
+        .attr("width", width + margin)
+        .attr("height", height + margin)
+        .append('g')
+        .attr('class','chart');
+
+        /*Dimple.js Chart construction code*/
+
+        /* Gender Breakdown */
+        var myChart = new dimple.chart(svg_gender, data);
+        var x = myChart.addCategoryAxis("x", ["gender"]);
+        x.addOrderRule(['male', "female"]);
+        var y = myChart.addPctAxis("y",['#']);
+        /* Axis titles */
+        x.title = "Gender";
+        y.title = "Number of Passengers";
+        y.showGridlines = false;
+        var mySeries = myChart.addSeries('embarked', dimple.plot.bar);
+        mySeries.aggregate = dimple.aggregateMethod.count;
+        mySeries.addOrderRule(['Southampton, UK', 'Cherbourg, FR', 'Queenstown, IR', 'unknown'])
+        myChart.addLegend(60, 10, 350, 20, "right");
+        myChart.draw();
+
+        /* Class Breakdown*/
+        var myChart = new dimple.chart(svg_class, data);
+        var x = myChart.addCategoryAxis("x", ["class"]);
+        var y = myChart.addPctAxis('y','#');
+        x.addOrderRule("class");
+        x.title = "Ticket Class";
+        x.addOrderRule(['first', "second", "third"]);
+        y.title = "Number of Passengers";
+        y.showGridlines = false;
+        var mySeries = myChart.addSeries('embarked', dimple.plot.bar);
+        mySeries.aggregate = dimple.aggregateMethod.count;
+        mySeries.addOrderRule(['Southampton, UK', 'Cherbourg, FR', 'Queenstown, IR', 'unknown'])
+        myChart.addLegend(60, 10, 350, 20, "right");
+        myChart.draw();
+        
+
+      };
+
+      </script>
+    </head>
+
+    <body>
+      <header>
+        <div class = "title">
+          <h1 style="padding-left: 10px">数据可视化项目</h1>
+        </div> 
+      </header>
+
+
+      <div>
+        <div id = "intro_text" class = "description">
+          <h2>介绍</h2>
+<p> 泰坦尼克号，在世界航海史上曾被骄傲地称为“永不沉没的巨轮”，该船船身相当于三幢半住宅大厦的长度，被欧美新闻界誉为“海上城市”。1912年4月15日凌晨，它载着2207名旅客和船员作处女航时，同一座漂浮的冰山发生了仅仅为时10秒钟的碰撞，便造成1513名旅客遇难的悲剧，这辉煌的首航竟给它带来了葬身海底的厄运。</p>
+      <p>最初几天平安地过去了，但是到了到第四天，报务员收到了航行在前方的船只发出的紧急电讯，电讯提醒他们冰山异乎寻常地向南漂浮，已经到了附近海域。4月14日是星期天，泰坦尼克号又收到了同样内容的紧急电讯，然而这些警告均未受到高傲的船员的重视，第一次收到的警报被丢到一边，几个小时没有向船长报告，后来的两次干脆没有送交到指挥室。黄昏刚过，气温便开始骤然下降，尽管冰山临近的迹象已经十分明显，泰坦尼克号却既没有改变航线也没有降低航行速度。</p>
+      <p>夜幕降临之后，爱德华·史密斯船长布置了警戒冰山的了望哨。23点40分了望台上的人最先发现了冰山，值班军官下令向右弦急转弯。可是一切都太迟了，冰山已经将船弦外壁撞开了一条100米长的裂口。大多数旅客只是感觉到了轻微的震动，几乎没有引起任何人的注意，但是随船的工程师们经过察看后认定：该船已经无法挽救了。他们认为，如果船上的16个防水舱只有4个进水的话，船还可以浮在水上，但不幸的是有5个底舱的外壁被冰山撕裂了。三等舱里的旅客大都起了床，因为海水已将他们房间里的地板淹没。报务员用莫尔斯电码发出了最新规定的SOS呼救信号，在海难中使用这种信号还是第一次。午夜12点零5分，按照船长的命令救生艇开始下水。</p>
+              
+      <p>旅客们并不清楚，在所有的救生艇上总共只有1178个座位，只能接纳旅客总数的一半，但是按当时的法律规定，这种救生条件已经算相当充分了。起初，旅客当中并没有发生恐慌，他们根本不相信会有什么危险，因为泰坦尼克号是“永远不会沉没的！”直到船体出现了危险的倾斜，他们才失去了先前的镇定。妇女和儿童首先离船。头等舱里的乘客优先登上了救生艇，在他们当中只有4名妇女在这次海难中丧生。在二等舱和三等舱里的272名妇女当中幸存下来的只有96人。有一段时间，三等舱通向甲板的门甚至都被锁住了，以防下面的乘客涌到甲板上来。在越来越倾斜的甲板上，乐队不停地演奏着拉格泰乐曲。</p>
+
+      <p>凌晨2点40分，泰坦尼克号几乎在水中直立起来，然后便头朝下沉入了3000米深的大西洋中。那些留在黑暗舱房里的移民们和泰坦尼克号一起葬身于海底，甲板上的人全被抛入了冰冷的海水，成了这条著名的冰海沉船的随葬品。</p>
+        </div>
+
+<div id = 'top_demo' style="width: 100%;">
+        <div id="demo_container_g" class = "svg_Container" style="float: left; width: 33%;">
+          <script type="text/javascript">
+          d3.csv("tita_data.csv", draw_demograph_g);
+          </script>
+        </div>
+
+        <div id="demo_container_c" class = "svg_Container" style="float: left; width: 33%;">
+          <script type="text/javascript">
+          d3.csv("tita_data.csv", draw_demograph_c);
+          </script>
+        </div>
+
+        <div id="demo_container_p" class = "svg_Container" style="float: left; width: 33%;">
+          <script type="text/javascript">
+          d3.csv("tita_data.csv", draw_demograph_p);
+          </script>
+        </div>
+ <br style="clear: left;" />
+</div>
+<div> <p></p>
+</div>
+<div id = 'bottom_demo' style="width: 100%">
+        <div id="demo_container_a" class = "svg_Container" style="float: left; width: 50%;">
+          <script type="text/javascript">
+          d3.csv("tita_data.csv", draw_demograph_a);
+          </script>
+        </div>
+
+        <div id="demo_container_f" class = "svg_Container" style="float: right; width: 50%;">
+          <script type="text/javascript">
+          d3.csv("tita_data.csv", draw_demograph_f);
+          </script>
+        </div>
+ <br style="clear: left;" />
+</div>
+
+        <div class = "description">
+          <p> 从我们的数据中显示得出，我们发现男性乘客远比女性乘客更多。 另外third class是所有class中最多的。另外自Southampton出发的游客比较多。同时很多的乘客其实是独自出行的。并且与拥有多名家庭成员的的人更少。</p>
+        </div>
+      </div>
+
+      <div>
+        <div id = "surv_text" class = "description">
+          <h2>生存情况统计</h2>
+        <p>共2224名乘客和机组人员中，死亡人数1500人。</p>
+        <p>目前并没有足够的理由表示其身份特征与其存活率有任何的必然联系。我仅以统计学角度对于生存情况进行分析。请继续查看相关图表。</p>
+
+        </div>
+
+        <div id="surv_container" class = "svg_Container">
+          <script type="text/javascript">
+          d3.csv("tita_data.csv", draw_survivors);
+          </script>
+        </div>
+        <div class = "description">
+         <p>我们可以发现在数据可视化的呈现中，女性的生存率远高于男性。并且很有趣的是，我们发现一二三，三class中，他们的生存率递减——即first class的生存率最高，以此类推。</p>
+        <p>first class作为社会的最高阶级，理应享受有更多的特权。</p>
+        <p>将分析结果分享给身边一个同事之后，同事接受的时候表示惊讶，作为First Class并没有电影中呈现的彬彬有礼的“把机会让给妇女儿童”</p>
+        <p>对此我秉持保留态度，供各位参考。</p>
+        <p>年龄分布较符合正态分布。并且存活下来的人也符合正态分布。其中以21到30岁的人群最多。伤亡人数也是最多的。</p>
+        <p>在上一个版本的时候，我给出相应年龄死亡人数的占比情况，然而并不能够有一个比较直观的结果，主要就是没考虑到生存与已有人数同时服从正态分布，这使得效果并不明显。但也在下列中保留出现</p>
+        </div>
+
+      </div>
+
+
+      <div>
+        <div id = "prc_text" class = "description">
+          <h2>生存情况百分比统计</h2>
+ <p> 并不是各种类别下的人数都相同，因此有一些偏差。</p>
+        <p>有些类别，如没有家庭成员的人，比其他类别的数字要大得多，比如一些有十个家庭成员的人。</p>
+        <p>某些特殊的条目中出现的100%并没有什么参考价值，主要原因是其数量较小。并且我认为，就家庭成员生存情况的角度来看，大于4的其实可以合并为一类（因为他们的数目相对小于4的人数太少。）</p>
+        <p>同时我们发现一个很有趣的东西，</p>
+        <p>由于这个原因，有幸存者的绝对条形图和百分比的条形图和绝对数标记是很好的。</p>
+        </div>
+
+
+        <div id="prc_container" class = "svg_Container">
+          <script type="text/javascript">
+          d3.csv("tita_data.csv", draw_survivors_pct);
+          </script>
+        </div>
+      </div>
+
+      <div id = "prc_text" class = "description">
+        <h2>结论</h2>
+<p> 数据可视化呈现了一些十分有趣的现象：例如虽然有更多的男性上船，但是妇女更有可能生存下来。虽然乘坐的儿童数量较少，但年龄小于十一岁的乘客的存活率与其他年龄组相比显著更高。</p>
+        <p>在查阅相关文献中，我们得知，船长曾下令“妇女儿童先上救生船”。</p>
+        <p>另外，我发现头等舱的幸存率是最高的。那些有一个、两个或三个家庭成员的人比其他群体更有可能幸存下来，但这可能是因为有3个家庭成员成员出行的大多数乘客也不是头等舱（毕竟头等舱价格更高，出行成本将非常的高昂）。</p> 
+        <div id="sh_container" class = "svg_Container">
+          <script type="text/javascript">
+          d3.csv("tita_data.csv", draw_sh);
+          </script>
+        </div>
+          <p>性别，年龄，或有相关港口上船和家人上船，可能造成一些我们看到的趋势。前三个特征是生存的最强指标。除此之外，从南安普顿出发的人生存的可能性要小得多。这部分是由于这样的事实，大多数乘客是来自南安普顿（72%）。另外，这跟南安普顿的人口统计。下面我们可以看到，一个不成比例的大量的男性（76%）和不相称的少量的头等舱机票（59%）来自南安普顿。 </p>
+          <p>女性、11岁以下儿童、头等舱乘客更有可能存活。遇难者人数大于幸存者人数。而有趣的是虽然船甚至还没有满员，但是还是没有足够的救生艇救所有的人上船。</p>
+
+      </div>
+
+
+    </body>
+    <footer>
+        <div class = "closer">
+          <h2 style="padding-right: 10px">Limber Cheng</h2>
+        </div> 
+      </footer>
+    </html>

@@ -1,0 +1,325 @@
+Lesson 3
+========================================================
+
+***
+
+### What to Do First?
+Notes:
+
+What is the mission of EDA?   To let the data to surprise you. What answer do you try to answer.
+
+The question should be simple.
+
+Understand what variable that are most central to your questions.
+
+Above that notation, the first thing that one should do is to come up with some interesting questions. Then, you should try your best to solve them. Using the very exact question to take your questions into apart if your questions are too big to anwswer directly.
+
+The more clear your mind is.
+
+The better your work is.
+
+Leave your information and try to solve the problem with a very clear result.
+
+***
+
+### Pseudo-Facebook User Data
+Notes:
+
+```{r Pseudo-Facebook User Data}
+getwd()
+list.files()
+pf<-read.csv("pseudo_facebook.tsv",sep='\t')
+names(pf)
+```
+
+Notes: If didn't add sep='\t, we couldn't open the data properly. Which will cease the next step.
+
+***
+
+### Histogram of Users' Birthdays
+Notes:
+
+```{r Histogram of Users\' Birthdays}
+# install.packages('ggplot2')
+library(ggplot2)
+qplot(x=dob_day,data=pf)
+```
+
+***
+
+#### What are some things that you notice about this histogram?
+Response:The first column is very high.
+
+***
+
+### Moira's Investigation
+Notes:
+
+***
+
+### Estimating Your Audience Size
+Notes:I my audience would be lot, around 80% would see my post.
+
+***
+
+#### Think about a time when you posted a specific message or shared a photo on Facebook. What was it?
+
+Response:
+
+#### How many of your friends do you think saw that post?
+Response:90
+
+#### Think about what percent of your friends on Facebook see any posts or comments that you make in a month. What percent do you think that is?
+Response:80%
+
+***
+
+### Perceived Audience Size
+Notes:It was only a quarter of the size. Draw a lot of plot.
+
+***
+### Faceting
+Notes:
+
+```{r Faceting}
+qplot(x=dob_day,data=pf)+
+  scale_x_discrete(breaks=1:31)+
+  facet_wrap(~dob_day,ncol=3)
+```
+
+#### Let’s take another look at our plot. What stands out to you here?
+Response:
+
+***
+
+### Be Skeptical - Outliers and Anomalies
+Notes:
+
+***
+
+### Moira's Outlier
+Notes:
+#### Which case do you think applies to Moira’s outlier?
+Response:
+
+***
+
+### Friend Count
+Notes:
+
+#### What code would you enter to create a histogram of friend counts?
+
+```{r Friend Count}
+qplot(
+  x=friend_count,
+  data=pf
+)
+```
+
+#### How is this plot similar to Moira's first plot?
+Response: This graph extends all the way to the 5000 mark.
+
+***
+
+### Limiting the Axes
+Notes:
+
+we can use xlim = c(a,b) to plot the data which range from a to b.
+
+```{r Limiting the Axes}
+qplot(
+  x=friend_count,
+  data=pf,
+  xlim = c(0,1000)
+)
+```
+
+I'd like to try another one:
+
+```{r}
+qplot(
+  x=friend_count,
+  data=pf)+
+  scale_x_continuous(limits = c(0,1000))
+```
+
+### Exploring with Bin Width
+Notes:
+
+***
+
+### Adjusting the Bin Width
+Notes:
+
+### Faceting Friend Count
+```{r Faceting Friend Count}
+# What code would you add to create a facet the histogram by gender?
+# Add it to the code below.
+
+qplot(x = friend_count, data = pf, binwidth = 10) +
+  scale_x_continuous(limits = c(0, 1000),
+                     breaks = seq(0, 1000, 50))
+```
+
+***
+
+### Omitting NA Values
+Notes:
+
+```{r Omitting NA Values}
+
+```
+
+***
+
+### Statistics 'by' Gender
+Notes:
+
+```{r Statistics \'by\' Gender}
+
+```
+
+#### Who on average has more friends: men or women?
+Response:
+
+#### What's the difference between the median friend count for women and men?
+Response:
+
+#### Why would the median be a better measure than the mean?
+Response:
+
+***
+
+### Tenure
+Notes:
+
+```{r Tenure}
+
+```
+
+***
+
+#### How would you create a histogram of tenure by year?
+
+```{r Tenure Histogram by Year}
+
+```
+
+***
+
+### Labeling Plots
+Notes:
+
+```{r Labeling Plots}
+
+```
+
+***
+
+### User Ages
+Notes:
+
+```{r User Ages}
+
+```
+
+#### What do you notice?
+Response:
+
+***
+
+### The Spread of Memes
+Notes:
+
+***
+
+### Lada's Money Bag Meme
+Notes:
+
+***
+
+### Transforming Data
+Notes:
+
+***
+
+### Add a Scaling Layer
+Notes:
+
+```{r Add a Scaling Layer}
+
+```
+
+***
+
+
+### Frequency Polygons
+
+```{r Frequency Polygons}
+
+```
+
+***
+
+### Likes on the Web
+Notes:
+
+```{r Likes on the Web}
+
+```
+
+
+***
+
+### Box Plots
+Notes:
+
+```{r Box Plots}
+
+```
+
+#### Adjust the code to focus on users who have friend counts between 0 and 1000.
+
+```{r}
+
+```
+
+***
+
+### Box Plots, Quartiles, and Friendships
+Notes:
+
+```{r Box Plots, Quartiles, and Friendships}
+
+```
+
+#### On average, who initiated more friendships in our sample: men or women?
+Response:
+#### Write about some ways that you can verify your answer.
+Response:
+```{r Friend Requests by Gender}
+
+```
+
+Response:
+
+***
+
+### Getting Logical
+Notes:
+
+```{r Getting Logical}
+
+```
+
+Response:
+
+***
+
+### Analyzing One Variable
+Reflection:
+
+***
+
+Click **KnitHTML** to see all of your hard work and to have an html
+page of this lesson, your answers, and your notes!

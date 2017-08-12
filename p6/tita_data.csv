@@ -1,0 +1,892 @@
+#,survived,class,gender,age,sib_sp,par_ch,fare,embarked,family,age_bin
+732,perished,third,male,11,0,0,18.7875,"Cherbourg, FR",none,< 11
+853,perished,third,female,9,1,1,15.2458,"Cherbourg, FR",two,< 11
+804,survived,third,male,0.42,0,1,8.5167,"Cherbourg, FR",one,< 11
+692,survived,third,female,4,0,1,13.4167,"Cherbourg, FR",one,< 11
+828,survived,second,male,1,0,2,37.0042,"Cherbourg, FR",two,< 11
+382,survived,third,female,1,0,2,15.7417,"Cherbourg, FR",two,< 11
+44,survived,second,female,3,1,2,41.5792,"Cherbourg, FR",three,< 11
+470,survived,third,female,0.75,2,1,19.2583,"Cherbourg, FR",three,< 11
+645,survived,third,female,0.75,2,1,19.2583,"Cherbourg, FR",three,< 11
+449,survived,third,female,5,2,1,19.2583,"Cherbourg, FR",three,< 11
+115,perished,third,female,17,0,0,14.4583,"Cherbourg, FR",none,11 to 20
+379,perished,third,male,20,0,0,4.0125,"Cherbourg, FR",none,11 to 20
+506,perished,first,male,18,1,0,108.9,"Cherbourg, FR",one,11 to 20
+112,perished,third,female,14.5,1,0,14.4542,"Cherbourg, FR",one,11 to 20
+703,perished,third,female,18,0,1,14.4542,"Cherbourg, FR",one,11 to 20
+353,perished,third,male,15,1,1,7.2292,"Cherbourg, FR",two,11 to 20
+533,perished,third,male,17,1,1,7.2292,"Cherbourg, FR",two,11 to 20
+390,survived,second,female,17,0,0,12,"Cherbourg, FR",none,11 to 20
+781,survived,third,female,13,0,0,7.2292,"Cherbourg, FR",none,11 to 20
+876,survived,third,female,15,0,0,7.225,"Cherbourg, FR",none,11 to 20
+763,survived,third,male,20,0,0,7.2292,"Cherbourg, FR",none,11 to 20
+330,survived,first,female,16,0,1,57.9792,"Cherbourg, FR",one,11 to 20
+308,survived,first,female,17,1,0,108.9,"Cherbourg, FR",one,11 to 20
+701,survived,first,female,18,1,0,227.525,"Cherbourg, FR",one,11 to 20
+292,survived,first,female,19,1,0,91.0792,"Cherbourg, FR",one,11 to 20
+10,survived,second,female,14,1,0,30.0708,"Cherbourg, FR",one,11 to 20
+126,survived,third,male,12,1,0,11.2417,"Cherbourg, FR",one,11 to 20
+40,survived,third,female,14,1,0,11.2417,"Cherbourg, FR",one,11 to 20
+831,survived,third,female,15,1,0,14.4542,"Cherbourg, FR",one,11 to 20
+551,survived,first,male,17,0,2,110.8833,"Cherbourg, FR",two,11 to 20
+623,survived,third,male,20,1,1,15.7417,"Cherbourg, FR",two,11 to 20
+312,survived,first,female,18,2,2,262.375,"Cherbourg, FR",four,11 to 20
+743,survived,first,female,21,2,2,262.375,"Cherbourg, FR",four,11 to 20
+374,perished,first,male,22,0,0,135.6333,"Cherbourg, FR",none,21 to 30
+140,perished,first,male,24,0,0,79.2,"Cherbourg, FR",none,21 to 30
+453,perished,first,male,30,0,0,27.75,"Cherbourg, FR",none,21 to 30
+136,perished,second,male,23,0,0,15.0458,"Cherbourg, FR",none,21 to 30
+61,perished,third,male,22,0,0,7.2292,"Cherbourg, FR",none,21 to 30
+297,perished,third,male,23.5,0,0,7.2292,"Cherbourg, FR",none,21 to 30
+694,perished,third,male,25,0,0,7.225,"Cherbourg, FR",none,21 to 30
+58,perished,third,male,28.5,0,0,7.2292,"Cherbourg, FR",none,21 to 30
+245,perished,third,male,30,0,0,7.225,"Cherbourg, FR",none,21 to 30
+799,perished,third,male,30,0,0,7.2292,"Cherbourg, FR",none,21 to 30
+119,perished,first,male,24,0,1,247.5208,"Cherbourg, FR",one,21 to 30
+35,perished,first,male,28,1,0,82.1708,"Cherbourg, FR",one,21 to 30
+362,perished,second,male,29,1,0,27.7208,"Cherbourg, FR",one,21 to 30
+309,perished,second,male,30,1,0,24,"Cherbourg, FR",one,21 to 30
+74,perished,third,male,26,1,0,14.4542,"Cherbourg, FR",one,21 to 30
+621,perished,third,male,27,1,0,14.4542,"Cherbourg, FR",one,21 to 30
+378,perished,first,male,27,0,2,211.5,"Cherbourg, FR",two,21 to 30
+818,perished,second,male,31,1,1,37.0042,"Cherbourg, FR",two,21 to 30
+686,perished,second,male,25,1,2,41.5792,"Cherbourg, FR",three,21 to 30
+311,survived,first,female,24,0,0,83.1583,"Cherbourg, FR",none,21 to 30
+370,survived,first,female,24,0,0,69.3,"Cherbourg, FR",none,21 to 30
+642,survived,first,female,24,0,0,69.3,"Cherbourg, FR",none,21 to 30
+711,survived,first,female,24,0,0,49.5042,"Cherbourg, FR",none,21 to 30
+890,survived,first,male,26,0,0,30,"Cherbourg, FR",none,21 to 30
+682,survived,first,male,27,0,0,76.7292,"Cherbourg, FR",none,21 to 30
+310,survived,first,female,30,0,0,56.9292,"Cherbourg, FR",none,21 to 30
+538,survived,first,female,30,0,0,106.425,"Cherbourg, FR",none,21 to 30
+843,survived,first,female,30,0,0,31,"Cherbourg, FR",none,21 to 30
+474,survived,second,female,23,0,0,13.7917,"Cherbourg, FR",none,21 to 30
+554,survived,third,male,22,0,0,7.225,"Cherbourg, FR",none,21 to 30
+208,survived,third,male,26,0,0,18.7875,"Cherbourg, FR",none,21 to 30
+456,survived,third,male,29,0,0,7.8958,"Cherbourg, FR",none,21 to 30
+98,survived,first,male,23,0,1,63.3583,"Cherbourg, FR",one,21 to 30
+394,survived,first,female,23,1,0,113.275,"Cherbourg, FR",one,21 to 30
+371,survived,first,male,25,1,0,55.4417,"Cherbourg, FR",one,21 to 30
+485,survived,first,male,25,1,0,91.0792,"Cherbourg, FR",one,21 to 30
+216,survived,first,female,31,1,0,113.275,"Cherbourg, FR",one,21 to 30
+867,survived,second,female,27,1,0,13.8583,"Cherbourg, FR",one,21 to 30
+875,survived,second,female,28,1,0,24,"Cherbourg, FR",one,21 to 30
+540,survived,first,female,22,0,2,49.5,"Cherbourg, FR",two,21 to 30
+256,survived,third,female,29,0,2,15.2458,"Cherbourg, FR",two,21 to 30
+609,survived,second,female,22,1,2,41.5792,"Cherbourg, FR",three,21 to 30
+859,survived,third,female,24,0,3,19.2583,"Cherbourg, FR",three,21 to 30
+584,perished,first,male,36,0,0,40.125,"Cherbourg, FR",none,31 to 40
+31,perished,first,male,40,0,0,27.7208,"Cherbourg, FR",none,31 to 40
+293,perished,second,male,36,0,0,12.875,"Cherbourg, FR",none,31 to 40
+131,perished,third,male,33,0,0,7.8958,"Cherbourg, FR",none,31 to 40
+286,perished,third,male,33,0,0,8.6625,"Cherbourg, FR",none,31 to 40
+844,perished,third,male,34.5,0,0,6.4375,"Cherbourg, FR",none,31 to 40
+848,perished,third,male,35,0,0,7.8958,"Cherbourg, FR",none,31 to 40
+662,perished,third,male,40,0,0,7.225,"Cherbourg, FR",none,31 to 40
+274,perished,first,male,37,0,1,29.7,"Cherbourg, FR",one,31 to 40
+123,perished,second,male,32.5,1,0,30.0708,"Cherbourg, FR",one,31 to 40
+219,survived,first,female,32,0,0,76.2917,"Cherbourg, FR",none,31 to 40
+633,survived,first,male,32,0,0,30.5,"Cherbourg, FR",none,31 to 40
+259,survived,first,female,35,0,0,512.3292,"Cherbourg, FR",none,31 to 40
+605,survived,first,male,35,0,0,26.55,"Cherbourg, FR",none,31 to 40
+738,survived,first,male,35,0,0,512.3292,"Cherbourg, FR",none,31 to 40
+326,survived,first,female,36,0,0,135.6333,"Cherbourg, FR",none,31 to 40
+717,survived,first,female,38,0,0,227.525,"Cherbourg, FR",none,31 to 40
+210,survived,first,male,40,0,0,31,"Cherbourg, FR",none,31 to 40
+338,survived,first,female,41,0,0,134.5,"Cherbourg, FR",none,31 to 40
+680,survived,first,male,36,0,1,512.3292,"Cherbourg, FR",one,31 to 40
+2,survived,first,female,38,1,0,71.2833,"Cherbourg, FR",one,31 to 40
+582,survived,first,female,39,1,1,110.8833,"Cherbourg, FR",two,31 to 40
+836,survived,first,female,39,1,1,83.1583,"Cherbourg, FR",two,31 to 40
+320,survived,first,female,40,1,1,134.5,"Cherbourg, FR",two,31 to 40
+790,perished,first,male,46,0,0,79.2,"Cherbourg, FR",none,41 to 50
+178,perished,first,female,50,0,0,28.7125,"Cherbourg, FR",none,41 to 50
+204,perished,third,male,45.5,0,0,7.225,"Cherbourg, FR",none,41 to 50
+545,perished,first,male,50,1,0,106.425,"Cherbourg, FR",one,41 to 50
+156,perished,first,male,51,0,1,61.3792,"Cherbourg, FR",one,41 to 50
+363,perished,third,female,45,0,1,14.4542,"Cherbourg, FR",one,41 to 50
+699,perished,first,male,49,1,1,110.8833,"Cherbourg, FR",two,41 to 50
+381,survived,first,female,42,0,0,227.525,"Cherbourg, FR",none,41 to 50
+195,survived,first,female,44,0,0,27.7208,"Cherbourg, FR",none,41 to 50
+524,survived,first,female,44,0,1,57.9792,"Cherbourg, FR",one,41 to 50
+557,survived,first,female,48,1,0,39.6,"Cherbourg, FR",one,41 to 50
+646,survived,first,male,48,1,0,76.7292,"Cherbourg, FR",one,41 to 50
+53,survived,first,female,49,1,0,76.7292,"Cherbourg, FR",one,41 to 50
+454,survived,first,male,49,1,0,89.1042,"Cherbourg, FR",one,41 to 50
+600,survived,first,male,49,1,0,56.9292,"Cherbourg, FR",one,41 to 50
+300,survived,first,female,50,0,1,247.5208,"Cherbourg, FR",one,41 to 50
+175,perished,first,male,56,0,0,30.6958,"Cherbourg, FR",none,51 to 60
+488,perished,first,male,58,0,0,29.7,"Cherbourg, FR",none,51 to 60
+660,perished,first,male,58,0,2,113.275,"Cherbourg, FR",two,51 to 60
+648,survived,first,male,56,0,0,35.5,"Cherbourg, FR",none,51 to 60
+196,survived,first,female,58,0,0,146.5208,"Cherbourg, FR",none,51 to 60
+592,survived,first,female,52,1,0,78.2667,"Cherbourg, FR",one,51 to 60
+497,survived,first,female,54,1,0,78.2667,"Cherbourg, FR",one,51 to 60
+514,survived,first,female,54,1,0,59.4,"Cherbourg, FR",one,51 to 60
+880,survived,first,female,56,0,1,83.1583,"Cherbourg, FR",one,51 to 60
+367,survived,first,female,60,1,0,75.25,"Cherbourg, FR",one,51 to 60
+588,survived,first,male,60,1,1,79.2,"Cherbourg, FR",two,51 to 60
+97,perished,first,male,71,0,0,34.6542,"Cherbourg, FR",none,61 to 80
+494,perished,first,male,71,0,0,49.5042,"Cherbourg, FR",none,61 to 80
+55,perished,first,male,65,0,1,61.9792,"Cherbourg, FR",one,61 to 80
+65,perished,first,male,unknown,0,0,27.7208,"Cherbourg, FR",none,unknown
+296,perished,first,male,unknown,0,0,27.7208,"Cherbourg, FR",none,unknown
+558,perished,first,male,unknown,0,0,227.525,"Cherbourg, FR",none,unknown
+767,perished,first,male,unknown,0,0,39.6,"Cherbourg, FR",none,unknown
+794,perished,first,male,unknown,0,0,30.6958,"Cherbourg, FR",none,unknown
+182,perished,second,male,unknown,0,0,15.05,"Cherbourg, FR",none,unknown
+27,perished,third,male,unknown,0,0,7.225,"Cherbourg, FR",none,unknown
+43,perished,third,male,unknown,0,0,7.8958,"Cherbourg, FR",none,unknown
+355,perished,third,male,unknown,0,0,7.225,"Cherbourg, FR",none,unknown
+421,perished,third,male,unknown,0,0,7.8958,"Cherbourg, FR",none,unknown
+496,perished,third,male,unknown,0,0,14.4583,"Cherbourg, FR",none,unknown
+523,perished,third,male,unknown,0,0,7.225,"Cherbourg, FR",none,unknown
+525,perished,third,male,unknown,0,0,7.2292,"Cherbourg, FR",none,unknown
+532,perished,third,male,unknown,0,0,7.2292,"Cherbourg, FR",none,unknown
+569,perished,third,male,unknown,0,0,7.2292,"Cherbourg, FR",none,unknown
+585,perished,third,male,unknown,0,0,8.7125,"Cherbourg, FR",none,unknown
+599,perished,third,male,unknown,0,0,7.225,"Cherbourg, FR",none,unknown
+774,perished,third,male,unknown,0,0,7.225,"Cherbourg, FR",none,unknown
+833,perished,third,male,unknown,0,0,7.2292,"Cherbourg, FR",none,unknown
+860,perished,third,male,unknown,0,0,7.2292,"Cherbourg, FR",none,unknown
+241,perished,third,female,unknown,1,0,14.4542,"Cherbourg, FR",one,unknown
+579,perished,third,female,unknown,1,0,14.4583,"Cherbourg, FR",one,unknown
+49,perished,third,male,unknown,2,0,21.6792,"Cherbourg, FR",two,unknown
+141,perished,third,female,unknown,0,2,15.2458,"Cherbourg, FR",two,unknown
+257,survived,first,female,unknown,0,0,79.2,"Cherbourg, FR",none,unknown
+307,survived,first,female,unknown,0,0,110.8833,"Cherbourg, FR",none,unknown
+840,survived,first,male,unknown,0,0,29.7,"Cherbourg, FR",none,unknown
+548,survived,second,male,unknown,0,0,13.8625,"Cherbourg, FR",none,unknown
+20,survived,third,female,unknown,0,0,7.225,"Cherbourg, FR",none,unknown
+37,survived,third,male,unknown,0,0,7.2292,"Cherbourg, FR",none,unknown
+368,survived,third,female,unknown,0,0,7.2292,"Cherbourg, FR",none,unknown
+32,survived,first,female,unknown,1,0,146.5208,"Cherbourg, FR",one,unknown
+376,survived,first,female,unknown,1,0,82.1708,"Cherbourg, FR",one,unknown
+850,survived,first,female,unknown,1,0,89.1042,"Cherbourg, FR",one,unknown
+66,survived,third,male,unknown,1,1,15.2458,"Cherbourg, FR",two,unknown
+129,survived,third,female,unknown,1,1,22.3583,"Cherbourg, FR",two,unknown
+534,survived,third,female,unknown,0,2,22.3583,"Cherbourg, FR",two,unknown
+710,survived,third,male,unknown,1,1,15.2458,"Cherbourg, FR",two,unknown
+17,perished,third,male,2,4,1,29.125,"Queenstown, IR",five,< 11
+172,perished,third,male,4,4,1,29.125,"Queenstown, IR",five,< 11
+279,perished,third,male,7,4,1,29.125,"Queenstown, IR",five,< 11
+788,perished,third,male,8,4,1,29.125,"Queenstown, IR",five,< 11
+655,perished,third,female,18,0,0,6.75,"Queenstown, IR",none,11 to 20
+144,perished,third,male,19,0,0,6.75,"Queenstown, IR",none,11 to 20
+422,perished,third,male,21,0,0,7.7333,"Queenstown, IR",none,11 to 20
+502,perished,third,female,21,0,0,7.75,"Queenstown, IR",none,11 to 20
+23,survived,third,female,15,0,0,8.0292,"Queenstown, IR",none,11 to 20
+157,survived,third,female,16,0,0,7.7333,"Queenstown, IR",none,11 to 20
+209,survived,third,female,16,0,0,7.75,"Queenstown, IR",none,11 to 20
+45,survived,third,female,19,0,0,7.8792,"Queenstown, IR",none,11 to 20
+704,perished,third,male,25,0,0,7.7417,"Queenstown, IR",none,21 to 30
+768,perished,third,female,30.5,0,0,7.75,"Queenstown, IR",none,21 to 30
+750,perished,third,male,31,0,0,7.75,"Queenstown, IR",none,21 to 30
+323,survived,second,female,30,0,0,12.35,"Queenstown, IR",none,21 to 30
+290,survived,third,female,22,0,0,7.75,"Queenstown, IR",none,21 to 30
+511,survived,third,male,29,0,0,7.75,"Queenstown, IR",none,21 to 30
+891,perished,third,male,32,0,0,7.75,"Queenstown, IR",none,31 to 40
+526,perished,third,male,40.5,0,0,7.75,"Queenstown, IR",none,31 to 40
+658,perished,third,female,32,1,1,15.5,"Queenstown, IR",two,31 to 40
+189,perished,third,male,40,1,1,15.5,"Queenstown, IR",two,31 to 40
+886,perished,third,female,39,0,5,29.125,"Queenstown, IR",five,31 to 40
+413,survived,first,female,33,1,0,90,"Queenstown, IR",one,31 to 40
+246,perished,first,male,44,2,0,90,"Queenstown, IR",two,41 to 50
+627,perished,second,male,57,0,0,12.35,"Queenstown, IR",none,51 to 60
+281,perished,third,male,65,0,0,7.75,"Queenstown, IR",none,61 to 80
+117,perished,third,male,70.5,0,0,7.75,"Queenstown, IR",none,61 to 80
+6,perished,third,male,unknown,0,0,8.4583,"Queenstown, IR",none,unknown
+127,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+197,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+261,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+265,perished,third,female,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+389,perished,third,male,unknown,0,0,7.7292,"Queenstown, IR",none,unknown
+412,perished,third,male,unknown,0,0,6.8583,"Queenstown, IR",none,unknown
+429,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+460,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+469,perished,third,male,unknown,0,0,7.725,"Queenstown, IR",none,unknown
+503,perished,third,female,unknown,0,0,7.6292,"Queenstown, IR",none,unknown
+518,perished,third,male,unknown,0,0,24.15,"Queenstown, IR",none,unknown
+553,perished,third,male,unknown,0,0,7.8292,"Queenstown, IR",none,unknown
+561,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+614,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+630,perished,third,male,unknown,0,0,7.7333,"Queenstown, IR",none,unknown
+681,perished,third,female,unknown,0,0,8.1375,"Queenstown, IR",none,unknown
+719,perished,third,male,unknown,0,0,15.5,"Queenstown, IR",none,unknown
+777,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+779,perished,third,male,unknown,0,0,7.7375,"Queenstown, IR",none,unknown
+791,perished,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+826,perished,third,male,unknown,0,0,6.95,"Queenstown, IR",none,unknown
+47,perished,third,male,unknown,1,0,15.5,"Queenstown, IR",one,unknown
+215,perished,third,male,unknown,1,0,7.75,"Queenstown, IR",one,unknown
+365,perished,third,male,unknown,1,0,15.5,"Queenstown, IR",one,unknown
+769,perished,third,male,unknown,1,0,24.15,"Queenstown, IR",one,unknown
+594,perished,third,female,unknown,0,2,7.75,"Queenstown, IR",two,unknown
+304,survived,second,female,unknown,0,0,12.35,"Queenstown, IR",none,unknown
+29,survived,third,female,unknown,0,0,7.8792,"Queenstown, IR",none,unknown
+33,survived,third,female,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+48,survived,third,female,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+83,survived,third,female,unknown,0,0,7.7875,"Queenstown, IR",none,unknown
+199,survived,third,female,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+275,survived,third,female,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+301,survived,third,female,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+359,survived,third,female,unknown,0,0,7.8792,"Queenstown, IR",none,unknown
+360,survived,third,female,unknown,0,0,7.8792,"Queenstown, IR",none,unknown
+369,survived,third,female,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+574,survived,third,female,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+654,survived,third,female,unknown,0,0,7.8292,"Queenstown, IR",none,unknown
+698,survived,third,female,unknown,0,0,7.7333,"Queenstown, IR",none,unknown
+728,survived,third,female,unknown,0,0,7.7375,"Queenstown, IR",none,unknown
+829,survived,third,male,unknown,0,0,7.75,"Queenstown, IR",none,unknown
+110,survived,third,female,unknown,1,0,24.15,"Queenstown, IR",one,unknown
+187,survived,third,female,unknown,1,0,15.5,"Queenstown, IR",one,unknown
+242,survived,third,female,unknown,1,0,15.5,"Queenstown, IR",one,unknown
+613,survived,third,female,unknown,1,0,15.5,"Queenstown, IR",one,unknown
+302,survived,third,male,unknown,2,0,23.25,"Queenstown, IR",two,unknown
+331,survived,third,female,unknown,2,0,23.25,"Queenstown, IR",two,unknown
+206,perished,third,female,2,0,1,10.4625,"Southampton, UK",one,< 11
+420,perished,third,female,10,0,2,24.15,"Southampton, UK",two,< 11
+298,perished,first,female,2,1,2,151.55,"Southampton, UK",three,< 11
+8,perished,third,male,2,3,1,21.075,"Southampton, UK",four,< 11
+375,perished,third,female,3,3,1,21.075,"Southampton, UK",four,< 11
+25,perished,third,female,8,3,1,21.075,"Southampton, UK",four,< 11
+148,perished,third,female,9,2,2,34.375,"Southampton, UK",four,< 11
+165,perished,third,male,1,4,1,39.6875,"Southampton, UK",five,< 11
+643,perished,third,female,2,3,2,27.9,"Southampton, UK",five,< 11
+825,perished,third,male,2,4,1,39.6875,"Southampton, UK",five,< 11
+64,perished,third,male,4,3,2,27.9,"Southampton, UK",five,< 11
+51,perished,third,male,7,4,1,39.6875,"Southampton, UK",five,< 11
+635,perished,third,female,9,3,2,27.9,"Southampton, UK",five,< 11
+820,perished,third,male,10,3,2,27.9,"Southampton, UK",five,< 11
+120,perished,third,female,2,4,2,31.275,"Southampton, UK",six ,< 11
+851,perished,third,male,4,4,2,31.275,"Southampton, UK",six ,< 11
+814,perished,third,female,6,4,2,31.275,"Southampton, UK",six ,< 11
+183,perished,third,male,9,4,2,31.3875,"Southampton, UK",six ,< 11
+542,perished,third,female,9,4,2,31.275,"Southampton, UK",six ,< 11
+543,perished,third,female,11,4,2,31.275,"Southampton, UK",six ,< 11
+387,perished,third,male,1,5,2,46.9,"Southampton, UK",seven,< 11
+481,perished,third,male,9,5,2,46.9,"Southampton, UK",seven,< 11
+60,perished,third,male,11,5,2,46.9,"Southampton, UK",seven,< 11
+778,survived,third,female,5,0,0,12.475,"Southampton, UK",none,< 11
+721,survived,second,female,6,0,1,33,"Southampton, UK",one,< 11
+480,survived,third,female,2,0,1,12.2875,"Southampton, UK",one,< 11
+752,survived,third,male,6,0,1,12.475,"Southampton, UK",one,< 11
+446,survived,first,male,4,0,2,81.8583,"Southampton, UK",two,< 11
+756,survived,second,male,0.67,1,1,14.5,"Southampton, UK",two,< 11
+79,survived,second,male,0.83,0,2,29,"Southampton, UK",two,< 11
+832,survived,second,male,0.83,1,1,18.75,"Southampton, UK",two,< 11
+341,survived,second,male,2,1,1,26,"Southampton, UK",two,< 11
+531,survived,second,female,2,1,1,26,"Southampton, UK",two,< 11
+194,survived,second,male,3,1,1,26,"Southampton, UK",two,< 11
+408,survived,second,male,3,1,1,18.75,"Southampton, UK",two,< 11
+751,survived,second,female,4,1,1,23,"Southampton, UK",two,< 11
+536,survived,second,female,7,0,2,26.25,"Southampton, UK",two,< 11
+238,survived,second,female,8,0,2,26.25,"Southampton, UK",two,< 11
+550,survived,second,male,8,1,1,36.75,"Southampton, UK",two,< 11
+173,survived,third,female,1,1,1,11.1333,"Southampton, UK",two,< 11
+349,survived,third,male,3,1,1,15.9,"Southampton, UK",two,< 11
+11,survived,third,female,4,1,1,16.7,"Southampton, UK",two,< 11
+185,survived,third,female,4,0,2,22.025,"Southampton, UK",two,< 11
+870,survived,third,male,4,1,1,11.1333,"Southampton, UK",two,< 11
+166,survived,third,male,9,0,2,20.525,"Southampton, UK",two,< 11
+490,survived,third,male,9,1,1,15.9,"Southampton, UK",two,< 11
+306,survived,first,male,0.92,1,2,151.55,"Southampton, UK",three,< 11
+803,survived,first,male,11,1,2,120,"Southampton, UK",three,< 11
+184,survived,second,male,1,2,1,39,"Southampton, UK",three,< 11
+619,survived,second,female,4,2,1,39,"Southampton, UK",three,< 11
+59,survived,second,female,5,1,2,27.75,"Southampton, UK",three,< 11
+789,survived,third,male,1,1,2,20.575,"Southampton, UK",three,< 11
+262,survived,third,male,3,4,2,31.3875,"Southampton, UK",six ,< 11
+234,survived,third,female,5,4,2,31.3875,"Southampton, UK",six ,< 11
+792,perished,second,male,16,0,0,26,"Southampton, UK",none,11 to 20
+842,perished,second,male,16,0,0,10.5,"Southampton, UK",none,11 to 20
+145,perished,second,male,18,0,0,11.5,"Southampton, UK",none,11 to 20
+229,perished,second,male,18,0,0,13,"Southampton, UK",none,11 to 20
+386,perished,second,male,18,0,0,73.5,"Southampton, UK",none,11 to 20
+758,perished,second,male,18,0,0,11.5,"Southampton, UK",none,11 to 20
+192,perished,second,male,19,0,0,13,"Southampton, UK",none,11 to 20
+239,perished,second,male,19,0,0,10.5,"Southampton, UK",none,11 to 20
+73,perished,second,male,21,0,0,73.5,"Southampton, UK",none,11 to 20
+15,perished,third,female,14,0,0,7.8542,"Southampton, UK",none,11 to 20
+139,perished,third,male,16,0,0,9.2167,"Southampton, UK",none,11 to 20
+283,perished,third,male,16,0,0,9.5,"Southampton, UK",none,11 to 20
+575,perished,third,male,16,0,0,8.05,"Southampton, UK",none,11 to 20
+765,perished,third,male,16,0,0,7.775,"Southampton, UK",none,11 to 20
+164,perished,third,male,17,0,0,8.6625,"Southampton, UK",none,11 to 20
+434,perished,third,male,17,0,0,7.125,"Southampton, UK",none,11 to 20
+501,perished,third,male,17,0,0,8.6625,"Southampton, UK",none,11 to 20
+845,perished,third,male,17,0,0,8.6625,"Southampton, UK",none,11 to 20
+676,perished,third,male,18,0,0,7.775,"Southampton, UK",none,11 to 20
+689,perished,third,male,18,0,0,7.7958,"Southampton, UK",none,11 to 20
+776,perished,third,male,18,0,0,7.75,"Southampton, UK",none,11 to 20
+808,perished,third,female,18,0,0,7.775,"Southampton, UK",none,11 to 20
+835,perished,third,male,18,0,0,8.3,"Southampton, UK",none,11 to 20
+68,perished,third,male,19,0,0,8.1583,"Southampton, UK",none,11 to 20
+303,perished,third,male,19,0,0,0,"Southampton, UK",none,11 to 20
+373,perished,third,male,19,0,0,8.05,"Southampton, UK",none,11 to 20
+380,perished,third,male,19,0,0,7.775,"Southampton, UK",none,11 to 20
+567,perished,third,male,19,0,0,7.8958,"Southampton, UK",none,11 to 20
+576,perished,third,male,19,0,0,14.5,"Southampton, UK",none,11 to 20
+647,perished,third,male,19,0,0,7.8958,"Southampton, UK",none,11 to 20
+688,perished,third,male,19,0,0,10.1708,"Southampton, UK",none,11 to 20
+716,perished,third,male,19,0,0,7.65,"Southampton, UK",none,11 to 20
+878,perished,third,male,19,0,0,7.8958,"Southampton, UK",none,11 to 20
+13,perished,third,male,20,0,0,8.05,"Southampton, UK",none,11 to 20
+92,perished,third,male,20,0,0,7.8542,"Southampton, UK",none,11 to 20
+132,perished,third,male,20,0,0,7.05,"Southampton, UK",none,11 to 20
+405,perished,third,female,20,0,0,8.6625,"Southampton, UK",none,11 to 20
+442,perished,third,male,20,0,0,9.5,"Southampton, UK",none,11 to 20
+641,perished,third,male,20,0,0,7.8542,"Southampton, UK",none,11 to 20
+683,perished,third,male,20,0,0,9.225,"Southampton, UK",none,11 to 20
+726,perished,third,male,20,0,0,8.6625,"Southampton, UK",none,11 to 20
+841,perished,third,male,20,0,0,7.925,"Southampton, UK",none,11 to 20
+877,perished,third,male,20,0,0,9.8458,"Southampton, UK",none,11 to 20
+228,perished,third,male,20.5,0,0,7.25,"Southampton, UK",none,11 to 20
+38,perished,third,male,21,0,0,8.05,"Southampton, UK",none,11 to 20
+52,perished,third,male,21,0,0,7.8,"Southampton, UK",none,11 to 20
+116,perished,third,male,21,0,0,7.925,"Southampton, UK",none,11 to 20
+174,perished,third,male,21,0,0,7.925,"Southampton, UK",none,11 to 20
+409,perished,third,male,21,0,0,7.775,"Southampton, UK",none,11 to 20
+492,perished,third,male,21,0,0,7.25,"Southampton, UK",none,11 to 20
+495,perished,third,male,21,0,0,8.05,"Southampton, UK",none,11 to 20
+624,perished,third,male,21,0,0,7.8542,"Southampton, UK",none,11 to 20
+625,perished,third,male,21,0,0,16.1,"Southampton, UK",none,11 to 20
+653,perished,third,male,21,0,0,8.4333,"Southampton, UK",none,11 to 20
+837,perished,third,male,21,0,0,8.6625,"Southampton, UK",none,11 to 20
+749,perished,first,male,19,1,0,53.1,"Southampton, UK",one,11 to 20
+103,perished,first,male,21,0,1,77.2875,"Southampton, UK",one,11 to 20
+862,perished,second,male,21,1,0,11.5,"Southampton, UK",one,11 to 20
+722,perished,third,male,17,1,0,7.0542,"Southampton, UK",one,11 to 20
+50,perished,third,female,18,1,0,17.8,"Southampton, UK",one,11 to 20
+372,perished,third,male,18,1,0,6.4958,"Southampton, UK",one,11 to 20
+114,perished,third,female,20,1,0,9.825,"Southampton, UK",one,11 to 20
+403,perished,third,female,21,1,0,9.825,"Southampton, UK",one,11 to 20
+146,perished,second,male,19,1,1,36.75,"Southampton, UK",two,11 to 20
+121,perished,second,male,21,2,0,73.5,"Southampton, UK",two,11 to 20
+334,perished,third,male,16,2,0,18,"Southampton, UK",two,11 to 20
+747,perished,third,male,16,1,1,20.25,"Southampton, UK",two,11 to 20
+39,perished,third,female,18,2,0,18,"Southampton, UK",two,11 to 20
+176,perished,third,male,18,1,1,7.8542,"Southampton, UK",two,11 to 20
+425,perished,third,male,18,1,1,20.2125,"Southampton, UK",two,11 to 20
+87,perished,third,male,16,1,3,34.375,"Southampton, UK",four,11 to 20
+437,perished,third,female,21,2,2,34.375,"Southampton, UK",four,11 to 20
+28,perished,first,male,19,3,2,263,"Southampton, UK",five,11 to 20
+687,perished,third,male,14,4,1,39.6875,"Southampton, UK",five,11 to 20
+267,perished,third,male,16,4,1,39.6875,"Southampton, UK",five,11 to 20
+684,perished,third,male,14,5,2,46.9,"Southampton, UK",seven,11 to 20
+72,perished,third,female,16,5,2,46.9,"Southampton, UK",seven,11 to 20
+505,survived,first,female,16,0,0,86.5,"Southampton, UK",none,11 to 20
+888,survived,first,female,19,0,0,30,"Southampton, UK",none,11 to 20
+628,survived,first,female,21,0,0,77.9583,"Southampton, UK",none,11 to 20
+85,survived,second,female,17,0,0,10.5,"Southampton, UK",none,11 to 20
+227,survived,second,male,19,0,0,10.5,"Southampton, UK",none,11 to 20
+428,survived,second,female,19,0,0,26,"Southampton, UK",none,11 to 20
+57,survived,second,female,21,0,0,10.5,"Southampton, UK",none,11 to 20
+221,survived,third,male,16,0,0,8.05,"Southampton, UK",none,11 to 20
+205,survived,third,male,18,0,0,8.05,"Southampton, UK",none,11 to 20
+678,survived,third,female,18,0,0,9.8417,"Southampton, UK",none,11 to 20
+787,survived,third,female,18,0,0,7.4958,"Southampton, UK",none,11 to 20
+284,survived,third,male,19,0,0,8.05,"Southampton, UK",none,11 to 20
+107,survived,third,female,21,0,0,7.65,"Southampton, UK",none,11 to 20
+392,survived,third,male,21,0,0,7.7958,"Southampton, UK",none,11 to 20
+690,survived,first,female,15,0,1,211.3375,"Southampton, UK",one,11 to 20
+854,survived,first,female,16,0,1,39.4,"Southampton, UK",one,11 to 20
+782,survived,first,female,17,1,0,57,"Southampton, UK",one,11 to 20
+447,survived,second,female,13,0,1,19.5,"Southampton, UK",one,11 to 20
+652,survived,second,female,18,0,1,23,"Southampton, UK",one,11 to 20
+547,survived,second,female,19,1,0,26,"Southampton, UK",one,11 to 20
+856,survived,third,female,18,0,1,9.35,"Southampton, UK",one,11 to 20
+193,survived,third,female,19,1,0,7.8542,"Southampton, UK",one,11 to 20
+665,survived,third,male,20,1,0,7.925,"Southampton, UK",one,11 to 20
+586,survived,first,female,18,0,2,79.65,"Southampton, UK",two,11 to 20
+137,survived,first,female,19,0,2,26.2833,"Southampton, UK",two,11 to 20
+418,survived,second,female,18,0,2,13,"Southampton, UK",two,11 to 20
+436,survived,first,female,14,1,2,120,"Southampton, UK",three,11 to 20
+69,survived,third,female,17,4,2,7.925,"Southampton, UK",six ,11 to 20
+84,perished,first,male,28,0,0,47.1,"Southampton, UK",none,21 to 30
+783,perished,first,male,29,0,0,30,"Southampton, UK",none,21 to 30
+868,perished,first,male,31,0,0,50.4958,"Southampton, UK",none,21 to 30
+399,perished,second,male,23,0,0,10.5,"Southampton, UK",none,21 to 30
+659,perished,second,male,23,0,0,13,"Southampton, UK",none,21 to 30
+734,perished,second,male,23,0,0,13,"Southampton, UK",none,21 to 30
+735,perished,second,male,23,0,0,13,"Southampton, UK",none,21 to 30
+200,perished,second,female,24,0,0,13,"Southampton, UK",none,21 to 30
+235,perished,second,male,24,0,0,10.5,"Southampton, UK",none,21 to 30
+865,perished,second,male,24,0,0,13,"Southampton, UK",none,21 to 30
+135,perished,second,male,25,0,0,13,"Southampton, UK",none,21 to 30
+344,perished,second,male,25,0,0,13,"Southampton, UK",none,21 to 30
+667,perished,second,male,25,0,0,13,"Southampton, UK",none,21 to 30
+620,perished,second,male,26,0,0,10.5,"Southampton, UK",none,21 to 30
+222,perished,second,male,27,0,0,13,"Southampton, UK",none,21 to 30
+552,perished,second,male,27,0,0,26,"Southampton, UK",none,21 to 30
+887,perished,second,male,27,0,0,13,"Southampton, UK",none,21 to 30
+343,perished,second,male,28,0,0,13,"Southampton, UK",none,21 to 30
+563,perished,second,male,28,0,0,13.5,"Southampton, UK",none,21 to 30
+884,perished,second,male,28,0,0,10.5,"Southampton, UK",none,21 to 30
+243,perished,second,male,29,0,0,10.5,"Southampton, UK",none,21 to 30
+179,perished,second,male,30,0,0,13,"Southampton, UK",none,21 to 30
+214,perished,second,male,30,0,0,13,"Southampton, UK",none,21 to 30
+220,perished,second,male,30,0,0,10.5,"Southampton, UK",none,21 to 30
+419,perished,second,male,30,0,0,13,"Southampton, UK",none,21 to 30
+440,perished,second,male,31,0,0,10.5,"Southampton, UK",none,21 to 30
+81,perished,third,male,22,0,0,9,"Southampton, UK",none,21 to 30
+113,perished,third,male,22,0,0,8.05,"Southampton, UK",none,21 to 30
+213,perished,third,male,22,0,0,7.25,"Southampton, UK",none,21 to 30
+226,perished,third,male,22,0,0,9.35,"Southampton, UK",none,21 to 30
+244,perished,third,male,22,0,0,7.125,"Southampton, UK",none,21 to 30
+288,perished,third,male,22,0,0,7.8958,"Southampton, UK",none,21 to 30
+321,perished,third,male,22,0,0,7.25,"Southampton, UK",none,21 to 30
+396,perished,third,male,22,0,0,7.7958,"Southampton, UK",none,21 to 30
+475,perished,third,female,22,0,0,9.8375,"Southampton, UK",none,21 to 30
+479,perished,third,male,22,0,0,7.5208,"Southampton, UK",none,21 to 30
+522,perished,third,male,22,0,0,7.8958,"Southampton, UK",none,21 to 30
+589,perished,third,male,22,0,0,8.05,"Southampton, UK",none,21 to 30
+883,perished,third,female,22,0,0,10.5167,"Southampton, UK",none,21 to 30
+351,perished,third,male,23,0,0,9.225,"Southampton, UK",none,21 to 30
+754,perished,third,male,23,0,0,7.8958,"Southampton, UK",none,21 to 30
+817,perished,third,female,23,0,0,7.925,"Southampton, UK",none,21 to 30
+834,perished,third,male,23,0,0,7.8542,"Southampton, UK",none,21 to 30
+90,perished,third,male,24,0,0,8.05,"Southampton, UK",none,21 to 30
+211,perished,third,male,24,0,0,7.05,"Southampton, UK",none,21 to 30
+294,perished,third,female,24,0,0,8.85,"Southampton, UK",none,21 to 30
+295,perished,third,male,24,0,0,7.8958,"Southampton, UK",none,21 to 30
+500,perished,third,male,24,0,0,7.7958,"Southampton, UK",none,21 to 30
+515,perished,third,male,24,0,0,7.4958,"Southampton, UK",none,21 to 30
+771,perished,third,male,24,0,0,9.5,"Southampton, UK",none,21 to 30
+677,perished,third,male,24.5,0,0,8.05,"Southampton, UK",none,21 to 30
+76,perished,third,male,25,0,0,7.65,"Southampton, UK",none,21 to 30
+247,perished,third,female,25,0,0,7.775,"Southampton, UK",none,21 to 30
+785,perished,third,male,25,0,0,7.05,"Southampton, UK",none,21 to 30
+786,perished,third,male,25,0,0,7.25,"Southampton, UK",none,21 to 30
+795,perished,third,male,25,0,0,7.8958,"Southampton, UK",none,21 to 30
+885,perished,third,male,25,0,0,7.05,"Southampton, UK",none,21 to 30
+163,perished,third,male,26,0,0,7.775,"Southampton, UK",none,21 to 30
+402,perished,third,male,26,0,0,8.05,"Southampton, UK",none,21 to 30
+629,perished,third,male,26,0,0,7.8958,"Southampton, UK",none,21 to 30
+811,perished,third,male,26,0,0,7.8875,"Southampton, UK",none,21 to 30
+871,perished,third,male,26,0,0,7.8958,"Southampton, UK",none,21 to 30
+322,perished,third,male,27,0,0,7.8958,"Southampton, UK",none,21 to 30
+101,perished,third,female,28,0,0,7.8958,"Southampton, UK",none,21 to 30
+106,perished,third,male,28,0,0,7.8958,"Southampton, UK",none,21 to 30
+170,perished,third,male,28,0,0,56.4958,"Southampton, UK",none,21 to 30
+201,perished,third,male,28,0,0,9.5,"Southampton, UK",none,21 to 30
+282,perished,third,male,28,0,0,7.8542,"Southampton, UK",none,21 to 30
+314,perished,third,male,28,0,0,7.8958,"Southampton, UK",none,21 to 30
+356,perished,third,male,28,0,0,9.5,"Southampton, UK",none,21 to 30
+509,perished,third,male,28,0,0,22.525,"Southampton, UK",none,21 to 30
+757,perished,third,male,28,0,0,7.7958,"Southampton, UK",none,21 to 30
+736,perished,third,male,28.5,0,0,16.1,"Southampton, UK",none,21 to 30
+91,perished,third,male,29,0,0,8.05,"Southampton, UK",none,21 to 30
+232,perished,third,male,29,0,0,7.775,"Southampton, UK",none,21 to 30
+423,perished,third,male,29,0,0,7.875,"Southampton, UK",none,21 to 30
+714,perished,third,male,29,0,0,9.4833,"Southampton, UK",none,21 to 30
+158,perished,third,male,30,0,0,8.05,"Southampton, UK",none,21 to 30
+366,perished,third,male,30,0,0,7.25,"Southampton, UK",none,21 to 30
+489,perished,third,male,30,0,0,8.05,"Southampton, UK",none,21 to 30
+535,perished,third,female,30,0,0,8.6625,"Southampton, UK",none,21 to 30
+607,perished,third,male,30,0,0,7.8958,"Southampton, UK",none,21 to 30
+815,perished,third,male,30.5,0,0,8.05,"Southampton, UK",none,21 to 30
+397,perished,third,female,31,0,0,7.8542,"Southampton, UK",none,21 to 30
+806,perished,third,male,31,0,0,7.775,"Southampton, UK",none,21 to 30
+337,perished,first,male,29,1,0,66.6,"Southampton, UK",one,21 to 30
+672,perished,first,male,31,1,0,52,"Southampton, UK",one,21 to 30
+729,perished,second,male,25,1,0,26,"Southampton, UK",one,21 to 30
+42,perished,second,female,27,1,0,21,"Southampton, UK",one,21 to 30
+849,perished,second,male,28,0,1,33,"Southampton, UK",one,21 to 30
+118,perished,second,male,29,1,0,21,"Southampton, UK",one,21 to 30
+1,perished,third,male,22,1,0,7.25,"Southampton, UK",one,21 to 30
+744,perished,third,male,24,1,0,16.1,"Southampton, UK",one,21 to 30
+354,perished,third,male,25,1,0,17.8,"Southampton, UK",one,21 to 30
+443,perished,third,male,25,1,0,7.775,"Southampton, UK",one,21 to 30
+730,perished,third,female,25,1,0,7.925,"Southampton, UK",one,21 to 30
+618,perished,third,female,26,1,0,16.1,"Southampton, UK",one,21 to 30
+705,perished,third,male,26,1,0,7.8542,"Southampton, UK",one,21 to 30
+404,perished,third,male,28,1,0,15.85,"Southampton, UK",one,21 to 30
+478,perished,third,male,29,1,0,7.0458,"Southampton, UK",one,21 to 30
+254,perished,third,male,30,1,0,16.1,"Southampton, UK",one,21 to 30
+19,perished,third,female,31,1,0,18,"Southampton, UK",one,21 to 30
+656,perished,second,male,24,2,0,73.5,"Southampton, UK",two,21 to 30
+313,perished,second,female,26,1,1,26,"Southampton, UK",two,21 to 30
+638,perished,second,male,31,1,1,26.25,"Southampton, UK",two,21 to 30
+566,perished,third,male,24,2,0,24.15,"Southampton, UK",two,21 to 30
+70,perished,third,male,26,2,0,8.6625,"Southampton, UK",two,21 to 30
+393,perished,third,male,28,2,0,7.925,"Southampton, UK",two,21 to 30
+424,perished,third,female,28,1,1,14.4,"Southampton, UK",two,21 to 30
+252,perished,third,female,29,1,1,10.4625,"Southampton, UK",two,21 to 30
+800,perished,third,female,30,1,1,24.15,"Southampton, UK",two,21 to 30
+499,perished,first,female,25,1,2,151.55,"Southampton, UK",three,21 to 30
+530,perished,second,male,23,2,1,11.5,"Southampton, UK",three,21 to 30
+94,perished,third,male,26,1,2,20.575,"Southampton, UK",three,21 to 30
+568,perished,third,female,29,0,4,21.075,"Southampton, UK",four,21 to 30
+709,survived,first,female,22,0,0,151.55,"Southampton, UK",none,21 to 30
+291,survived,first,female,26,0,0,78.85,"Southampton, UK",none,21 to 30
+608,survived,first,male,27,0,0,30.5,"Southampton, UK",none,21 to 30
+24,survived,first,male,28,0,0,35.5,"Southampton, UK",none,21 to 30
+431,survived,first,male,28,0,0,26.55,"Southampton, UK",none,21 to 30
+731,survived,first,female,29,0,0,211.3375,"Southampton, UK",none,21 to 30
+258,survived,first,female,30,0,0,86.5,"Southampton, UK",none,21 to 30
+521,survived,first,female,30,0,0,93.5,"Southampton, UK",none,21 to 30
+346,survived,second,female,24,0,0,13,"Southampton, UK",none,21 to 30
+718,survived,second,female,27,0,0,10.5,"Southampton, UK",none,21 to 30
+400,survived,second,female,28,0,0,12.65,"Southampton, UK",none,21 to 30
+444,survived,second,female,28,0,0,13,"Southampton, UK",none,21 to 30
+636,survived,second,female,28,0,0,13,"Southampton, UK",none,21 to 30
+67,survived,second,female,29,0,0,10.5,"Southampton, UK",none,21 to 30
+748,survived,second,female,30,0,0,13,"Southampton, UK",none,21 to 30
+674,survived,second,male,31,0,0,13,"Southampton, UK",none,21 to 30
+142,survived,third,female,22,0,0,7.75,"Southampton, UK",none,21 to 30
+377,survived,third,female,22,0,0,7.25,"Southampton, UK",none,21 to 30
+555,survived,third,female,22,0,0,7.775,"Southampton, UK",none,21 to 30
+650,survived,third,female,23,0,0,7.55,"Southampton, UK",none,21 to 30
+128,survived,third,male,24,0,0,7.1417,"Southampton, UK",none,21 to 30
+272,survived,third,male,25,0,0,0,"Southampton, UK",none,21 to 30
+3,survived,third,female,26,0,0,7.925,"Southampton, UK",none,21 to 30
+316,survived,third,female,26,0,0,7.8542,"Southampton, UK",none,21 to 30
+510,survived,third,male,26,0,0,56.4958,"Southampton, UK",none,21 to 30
+147,survived,third,male,27,0,0,7.7958,"Southampton, UK",none,21 to 30
+217,survived,third,female,27,0,0,7.925,"Southampton, UK",none,21 to 30
+805,survived,third,male,27,0,0,6.975,"Southampton, UK",none,21 to 30
+822,survived,third,male,27,0,0,8.6625,"Southampton, UK",none,21 to 30
+82,survived,third,male,29,0,0,9.5,"Southampton, UK",none,21 to 30
+80,survived,third,female,30,0,0,12.475,"Southampton, UK",none,21 to 30
+287,survived,third,male,30,0,0,9.5,"Southampton, UK",none,21 to 30
+745,survived,third,male,31,0,0,7.925,"Southampton, UK",none,21 to 30
+798,survived,third,female,31,0,0,8.6833,"Southampton, UK",none,21 to 30
+152,survived,first,female,22,1,0,66.6,"Southampton, UK",one,21 to 30
+357,survived,first,female,22,0,1,55,"Southampton, UK",one,21 to 30
+725,survived,first,male,27,1,0,53.1,"Southampton, UK",one,21 to 30
+691,survived,first,male,31,1,0,57,"Southampton, UK",one,21 to 30
+317,survived,second,female,24,1,0,26,"Southampton, UK",one,21 to 30
+881,survived,second,female,25,0,1,26,"Southampton, UK",one,21 to 30
+427,survived,second,female,28,1,0,26,"Southampton, UK",one,21 to 30
+54,survived,second,female,29,1,0,26,"Southampton, UK",one,21 to 30
+134,survived,second,female,29,1,0,26,"Southampton, UK",one,21 to 30
+143,survived,third,female,24,1,0,15.85,"Southampton, UK",one,21 to 30
+268,survived,third,male,25,1,0,7.775,"Southampton, UK",one,21 to 30
+824,survived,third,female,27,0,1,12.475,"Southampton, UK",one,21 to 30
+319,survived,first,female,31,0,2,164.8667,"Southampton, UK",two,21 to 30
+324,survived,second,female,22,1,1,29,"Southampton, UK",two,21 to 30
+248,survived,second,female,24,0,2,14.5,"Southampton, UK",two,21 to 30
+581,survived,second,female,25,1,1,30,"Southampton, UK",two,21 to 30
+802,survived,second,female,31,1,1,26.25,"Southampton, UK",two,21 to 30
+395,survived,third,female,24,0,2,16.7,"Southampton, UK",two,21 to 30
+9,survived,third,female,27,0,2,11.1333,"Southampton, UK",two,21 to 30
+329,survived,third,female,31,1,1,20.525,"Southampton, UK",two,21 to 30
+601,survived,second,female,24,2,1,27,"Southampton, UK",three,21 to 30
+616,survived,second,female,24,1,2,65,"Southampton, UK",three,21 to 30
+727,survived,second,female,30,3,0,21,"Southampton, UK",three,21 to 30
+89,survived,first,female,23,3,2,263,"Southampton, UK",five,21 to 30
+342,survived,first,female,24,3,2,263,"Southampton, UK",five,21 to 30
+438,survived,second,female,24,2,3,18.75,"Southampton, UK",five,21 to 30
+873,perished,first,male,33,0,0,5,"Southampton, UK",none,31 to 40
+823,perished,first,male,38,0,0,0,"Southampton, UK",none,31 to 40
+807,perished,first,male,39,0,0,0,"Southampton, UK",none,31 to 40
+264,perished,first,male,40,0,0,0,"Southampton, UK",none,31 to 40
+71,perished,second,male,32,0,0,10.5,"Southampton, UK",none,31 to 40
+240,perished,second,male,33,0,0,12.275,"Southampton, UK",none,31 to 40
+723,perished,second,male,34,0,0,13,"Southampton, UK",none,31 to 40
+801,perished,second,male,34,0,0,13,"Southampton, UK",none,31 to 40
+21,perished,second,male,35,0,0,26,"Southampton, UK",none,31 to 40
+813,perished,second,male,35,0,0,10.5,"Southampton, UK",none,31 to 40
+266,perished,second,male,36,0,0,10.5,"Southampton, UK",none,31 to 40
+345,perished,second,male,36,0,0,13,"Southampton, UK",none,31 to 40
+358,perished,second,female,38,0,0,13,"Southampton, UK",none,31 to 40
+706,perished,second,male,39,0,0,26,"Southampton, UK",none,31 to 40
+796,perished,second,male,39,0,0,13,"Southampton, UK",none,31 to 40
+809,perished,second,male,39,0,0,13,"Southampton, UK",none,31 to 40
+383,perished,third,male,32,0,0,7.925,"Southampton, UK",none,31 to 40
+520,perished,third,male,32,0,0,7.8958,"Southampton, UK",none,31 to 40
+637,perished,third,male,32,0,0,7.925,"Southampton, UK",none,31 to 40
+770,perished,third,male,32,0,0,8.3625,"Southampton, UK",none,31 to 40
+104,perished,third,male,33,0,0,8.6542,"Southampton, UK",none,31 to 40
+720,perished,third,male,33,0,0,7.775,"Southampton, UK",none,31 to 40
+753,perished,third,male,33,0,0,9.5,"Southampton, UK",none,31 to 40
+882,perished,third,male,33,0,0,7.8958,"Southampton, UK",none,31 to 40
+203,perished,third,male,34,0,0,6.4958,"Southampton, UK",none,31 to 40
+462,perished,third,male,34,0,0,8.05,"Southampton, UK",none,31 to 40
+759,perished,third,male,34,0,0,8.05,"Southampton, UK",none,31 to 40
+5,perished,third,male,35,0,0,8.05,"Southampton, UK",none,31 to 40
+364,perished,third,male,35,0,0,7.05,"Southampton, UK",none,31 to 40
+591,perished,third,male,35,0,0,7.125,"Southampton, UK",none,31 to 40
+615,perished,third,male,35,0,0,8.05,"Southampton, UK",none,31 to 40
+180,perished,third,male,36,0,0,0,"Southampton, UK",none,31 to 40
+190,perished,third,male,36,0,0,7.8958,"Southampton, UK",none,31 to 40
+664,perished,third,male,36,0,0,7.4958,"Southampton, UK",none,31 to 40
+504,perished,third,female,37,0,0,9.5875,"Southampton, UK",none,31 to 40
+109,perished,third,male,38,0,0,7.8958,"Southampton, UK",none,31 to 40
+466,perished,third,male,38,0,0,7.05,"Southampton, UK",none,31 to 40
+472,perished,third,male,38,0,0,8.6625,"Southampton, UK",none,31 to 40
+529,perished,third,male,39,0,0,7.925,"Southampton, UK",none,31 to 40
+812,perished,third,male,39,0,0,24.15,"Southampton, UK",none,31 to 40
+562,perished,third,male,40,0,0,7.8958,"Southampton, UK",none,31 to 40
+762,perished,third,male,41,0,0,7.125,"Southampton, UK",none,31 to 40
+742,perished,first,male,36,1,0,78.85,"Southampton, UK",one,31 to 40
+138,perished,first,male,37,1,0,53.1,"Southampton, UK",one,31 to 40
+333,perished,first,male,38,0,1,153.4625,"Southampton, UK",one,31 to 40
+100,perished,second,male,34,1,0,26,"Southampton, UK",one,31 to 40
+406,perished,second,male,34,1,0,21,"Southampton, UK",one,31 to 40
+477,perished,second,male,34,1,0,21,"Southampton, UK",one,31 to 40
+595,perished,second,male,37,1,0,26,"Southampton, UK",one,31 to 40
+207,perished,third,male,32,1,0,15.85,"Southampton, UK",one,31 to 40
+606,perished,third,male,36,1,0,15.55,"Southampton, UK",one,31 to 40
+41,perished,third,female,40,1,0,9.475,"Southampton, UK",one,31 to 40
+666,perished,second,male,32,2,0,73.5,"Southampton, UK",two,31 to 40
+149,perished,second,male,36.5,0,2,26,"Southampton, UK",two,31 to 40
+549,perished,third,male,33,1,1,20.525,"Southampton, UK",two,31 to 40
+617,perished,third,male,34,1,1,14.4,"Southampton, UK",two,31 to 40
+596,perished,third,male,36,1,1,24.15,"Southampton, UK",two,31 to 40
+105,perished,third,male,37,2,0,7.925,"Southampton, UK",two,31 to 40
+154,perished,third,male,40.5,0,2,14.5,"Southampton, UK",two,31 to 40
+255,perished,third,female,41,0,2,20.2125,"Southampton, UK",two,31 to 40
+861,perished,third,male,41,2,0,14.1083,"Southampton, UK",two,31 to 40
+451,perished,second,male,36,1,2,27.75,"Southampton, UK",three,31 to 40
+361,perished,third,male,40,1,4,27.9,"Southampton, UK",five,31 to 40
+639,perished,third,female,41,0,5,39.6875,"Southampton, UK",five,31 to 40
+14,perished,third,male,39,1,5,31.275,"Southampton, UK",six ,31 to 40
+611,perished,third,female,39,1,5,31.275,"Southampton, UK",six ,31 to 40
+760,survived,first,female,33,0,0,86.5,"Southampton, UK",none,31 to 40
+448,survived,first,male,34,0,0,26.55,"Southampton, UK",none,31 to 40
+270,survived,first,female,35,0,0,135.6333,"Southampton, UK",none,31 to 40
+702,survived,first,male,35,0,0,26.2875,"Southampton, UK",none,31 to 40
+513,survived,first,male,36,0,0,26.2875,"Southampton, UK",none,31 to 40
+573,survived,first,male,36,0,0,26.3875,"Southampton, UK",none,31 to 40
+610,survived,first,female,40,0,0,153.4625,"Southampton, UK",none,31 to 40
+191,survived,second,female,32,0,0,13,"Southampton, UK",none,31 to 40
+124,survived,second,female,32.5,0,0,13,"Southampton, UK",none,31 to 40
+22,survived,second,male,34,0,0,13,"Southampton, UK",none,31 to 40
+517,survived,second,female,34,0,0,10.5,"Southampton, UK",none,31 to 40
+577,survived,second,female,34,0,0,13,"Southampton, UK",none,31 to 40
+212,survived,second,female,35,0,0,21,"Southampton, UK",none,31 to 40
+328,survived,second,female,36,0,0,13,"Southampton, UK",none,31 to 40
+388,survived,second,female,36,0,0,13,"Southampton, UK",none,31 to 40
+162,survived,second,female,40,0,0,15.75,"Southampton, UK",none,31 to 40
+347,survived,second,female,40,0,0,13,"Southampton, UK",none,31 to 40
+75,survived,third,male,32,0,0,56.4958,"Southampton, UK",none,31 to 40
+430,survived,third,male,32,0,0,8.05,"Southampton, UK",none,31 to 40
+570,survived,third,male,32,0,0,7.8542,"Southampton, UK",none,31 to 40
+580,survived,third,male,32,0,0,7.925,"Southampton, UK",none,31 to 40
+839,survived,third,male,32,0,0,56.4958,"Southampton, UK",none,31 to 40
+401,survived,third,male,39,0,0,7.925,"Southampton, UK",none,31 to 40
+810,survived,first,female,33,1,0,53.1,"Southampton, UK",one,31 to 40
+4,survived,first,female,35,1,0,53.1,"Southampton, UK",one,31 to 40
+231,survived,first,female,35,1,0,83.475,"Southampton, UK",one,31 to 40
+384,survived,first,female,35,1,0,52,"Southampton, UK",one,31 to 40
+487,survived,first,female,35,1,0,90,"Southampton, UK",one,31 to 40
+225,survived,first,male,38,1,0,90,"Southampton, UK",one,31 to 40
+578,survived,first,female,39,1,0,55.9,"Southampton, UK",one,31 to 40
+544,survived,second,male,32,1,0,26,"Southampton, UK",one,31 to 40
+99,survived,second,female,34,0,1,23,"Southampton, UK",one,31 to 40
+519,survived,second,female,36,1,0,26,"Southampton, UK",one,31 to 40
+273,survived,second,female,41,0,1,19.5,"Southampton, UK",one,31 to 40
+560,survived,third,female,36,1,0,17.4,"Southampton, UK",one,31 to 40
+541,survived,first,female,36,0,2,71,"Southampton, UK",two,31 to 40
+249,survived,first,male,37,1,1,52.5542,"Southampton, UK",two,31 to 40
+559,survived,first,female,39,1,1,79.65,"Southampton, UK",two,31 to 40
+507,survived,second,female,33,0,2,26,"Southampton, UK",two,31 to 40
+417,survived,second,female,34,1,1,32.5,"Southampton, UK",two,31 to 40
+671,survived,second,female,40,1,1,39,"Southampton, UK",two,31 to 40
+280,survived,third,female,35,1,1,20.25,"Southampton, UK",two,31 to 40
+391,survived,first,male,36,1,2,120,"Southampton, UK",three,31 to 40
+764,survived,first,female,36,1,2,120,"Southampton, UK",three,31 to 40
+473,survived,second,female,33,1,2,27.75,"Southampton, UK",three,31 to 40
+86,survived,third,female,33,3,0,15.85,"Southampton, UK",three,31 to 40
+26,survived,third,female,38,1,5,31.3875,"Southampton, UK",six ,31 to 40
+340,perished,first,male,45,0,0,35.5,"Southampton, UK",none,41 to 50
+537,perished,first,male,45,0,0,26.55,"Southampton, UK",none,41 to 50
+332,perished,first,male,45.5,0,0,28.5,"Southampton, UK",none,41 to 50
+111,perished,first,male,47,0,0,52,"Southampton, UK",none,41 to 50
+463,perished,first,male,47,0,0,38.5,"Southampton, UK",none,41 to 50
+516,perished,first,male,47,0,0,34.0208,"Southampton, UK",none,41 to 50
+663,perished,first,male,47,0,0,25.5875,"Southampton, UK",none,41 to 50
+150,perished,second,male,42,0,0,13,"Southampton, UK",none,41 to 50
+398,perished,second,male,46,0,0,26,"Southampton, UK",none,41 to 50
+587,perished,second,male,47,0,0,15,"Southampton, UK",none,41 to 50
+464,perished,second,male,48,0,0,13,"Southampton, UK",none,41 to 50
+724,perished,second,male,50,0,0,13,"Southampton, UK",none,41 to 50
+151,perished,second,male,51,0,0,12.525,"Southampton, UK",none,41 to 50
+350,perished,third,male,42,0,0,8.6625,"Southampton, UK",none,41 to 50
+700,perished,third,male,42,0,0,7.65,"Southampton, UK",none,41 to 50
+846,perished,third,male,42,0,0,7.55,"Southampton, UK",none,41 to 50
+669,perished,third,male,43,0,0,8.05,"Southampton, UK",none,41 to 50
+819,perished,third,male,43,0,0,6.45,"Southampton, UK",none,41 to 50
+604,perished,third,male,44,0,0,8.05,"Southampton, UK",none,41 to 50
+697,perished,third,male,44,0,0,8.05,"Southampton, UK",none,41 to 50
+130,perished,third,male,45,0,0,6.975,"Southampton, UK",none,41 to 50
+277,perished,third,female,45,0,0,7.75,"Southampton, UK",none,41 to 50
+593,perished,third,male,47,0,0,7.25,"Southampton, UK",none,41 to 50
+874,perished,third,male,47,0,0,9,"Southampton, UK",none,41 to 50
+772,perished,third,male,48,0,0,7.8542,"Southampton, UK",none,41 to 50
+598,perished,third,male,49,0,0,0,"Southampton, UK",none,41 to 50
+483,perished,third,male,50,0,0,8.05,"Southampton, UK",none,41 to 50
+223,perished,third,male,51,0,0,8.05,"Southampton, UK",none,41 to 50
+407,perished,third,male,51,0,0,7.75,"Southampton, UK",none,41 to 50
+632,perished,third,male,51,0,0,7.0542,"Southampton, UK",none,41 to 50
+36,perished,first,male,42,1,0,52,"Southampton, UK",one,41 to 50
+63,perished,first,male,45,1,0,83.475,"Southampton, UK",one,41 to 50
+93,perished,first,male,46,1,0,61.175,"Southampton, UK",one,41 to 50
+435,perished,first,male,50,1,0,55.9,"Southampton, UK",one,41 to 50
+218,perished,second,male,42,1,0,27,"Southampton, UK",one,41 to 50
+237,perished,second,male,44,1,0,26,"Southampton, UK",one,41 to 50
+855,perished,second,female,44,1,0,26,"Southampton, UK",one,41 to 50
+198,perished,third,male,42,0,1,8.4042,"Southampton, UK",one,41 to 50
+161,perished,third,male,44,0,1,16.1,"Southampton, UK",one,41 to 50
+133,perished,third,female,47,1,0,14.5,"Southampton, UK",one,41 to 50
+315,perished,second,male,43,1,1,26.25,"Southampton, UK",two,41 to 50
+737,perished,third,female,48,1,3,34.375,"Southampton, UK",four,41 to 50
+168,perished,third,female,45,1,4,27.9,"Southampton, UK",five,41 to 50
+679,perished,third,female,43,1,6,46.9,"Southampton, UK",seven,41 to 50
+708,survived,first,male,42,0,0,26.2875,"Southampton, UK",none,41 to 50
+188,survived,first,male,45,0,0,26.55,"Southampton, UK",none,41 to 50
+461,survived,first,male,48,0,0,26.55,"Southampton, UK",none,41 to 50
+863,survived,first,female,48,0,0,25.9292,"Southampton, UK",none,41 to 50
+797,survived,first,female,49,0,0,25.9292,"Southampton, UK",none,41 to 50
+858,survived,first,male,51,0,0,26.55,"Southampton, UK",none,41 to 50
+289,survived,second,male,42,0,0,13,"Southampton, UK",none,41 to 50
+866,survived,second,female,42,0,0,13,"Southampton, UK",none,41 to 50
+707,survived,second,female,45,0,0,13.5,"Southampton, UK",none,41 to 50
+459,survived,second,female,50,0,0,10.5,"Southampton, UK",none,41 to 50
+527,survived,second,female,50,0,0,10.5,"Southampton, UK",none,41 to 50
+415,survived,third,male,44,0,0,7.925,"Southampton, UK",none,41 to 50
+339,survived,third,male,45,0,0,8.05,"Southampton, UK",none,41 to 50
+622,survived,first,male,42,1,0,52.5542,"Southampton, UK",one,41 to 50
+780,survived,first,female,43,0,1,211.3375,"Southampton, UK",one,41 to 50
+713,survived,first,male,48,1,0,52,"Southampton, UK",one,41 to 50
+766,survived,first,female,51,1,0,77.9583,"Southampton, UK",one,41 to 50
+433,survived,second,female,42,1,0,26,"Southampton, UK",one,41 to 50
+260,survived,second,female,50,0,1,26,"Southampton, UK",one,41 to 50
+857,survived,first,female,45,1,1,164.8667,"Southampton, UK",two,41 to 50
+872,survived,first,female,47,1,1,52.5542,"Southampton, UK",two,41 to 50
+661,survived,first,male,50,2,0,133.65,"Southampton, UK",two,41 to 50
+441,survived,second,female,45,1,1,26.25,"Southampton, UK",two,41 to 50
+755,survived,second,female,48,1,2,65,"Southampton, UK",three,41 to 50
+7,perished,first,male,54,0,0,51.8625,"Southampton, UK",none,51 to 60
+493,perished,first,male,55,0,0,30.5,"Southampton, UK",none,51 to 60
+468,perished,first,male,56,0,0,26.55,"Southampton, UK",none,51 to 60
+695,perished,first,male,60,0,0,26.55,"Southampton, UK",none,51 to 60
+171,perished,first,male,61,0,0,33.5,"Southampton, UK",none,51 to 60
+626,perished,first,male,61,0,0,32.3208,"Southampton, UK",none,51 to 60
+696,perished,second,male,52,0,0,13.5,"Southampton, UK",none,51 to 60
+715,perished,second,male,52,0,0,13,"Southampton, UK",none,51 to 60
+318,perished,second,male,54,0,0,14,"Southampton, UK",none,51 to 60
+583,perished,second,male,54,0,0,26,"Southampton, UK",none,51 to 60
+773,perished,second,female,57,0,0,10.5,"Southampton, UK",none,51 to 60
+233,perished,second,male,59,0,0,13.5,"Southampton, UK",none,51 to 60
+153,perished,third,male,55.5,0,0,8.05,"Southampton, UK",none,51 to 60
+95,perished,third,male,59,0,0,7.25,"Southampton, UK",none,51 to 60
+327,perished,third,male,61,0,0,6.2375,"Southampton, UK",none,51 to 60
+125,perished,first,male,54,0,1,77.2875,"Southampton, UK",one,51 to 60
+250,perished,second,male,54,1,0,26,"Southampton, UK",one,51 to 60
+263,perished,first,male,52,1,1,79.65,"Southampton, UK",two,51 to 60
+685,perished,second,male,60,1,1,39,"Southampton, UK",two,51 to 60
+450,survived,first,male,52,0,0,30.5,"Southampton, UK",none,51 to 60
+12,survived,first,female,58,0,0,26.55,"Southampton, UK",none,51 to 60
+16,survived,second,female,55,0,0,16,"Southampton, UK",none,51 to 60
+269,survived,first,female,58,0,1,153.4625,"Southampton, UK",one,51 to 60
+821,survived,first,female,52,1,1,93.5,"Southampton, UK",two,51 to 60
+572,survived,first,female,53,2,0,51.4792,"Southampton, UK",two,51 to 60
+775,survived,second,female,54,1,3,23,"Southampton, UK",four,51 to 60
+253,perished,first,male,62,0,0,26.55,"Southampton, UK",none,61 to 80
+556,perished,first,male,62,0,0,26.55,"Southampton, UK",none,61 to 80
+546,perished,first,male,64,0,0,26,"Southampton, UK",none,61 to 80
+457,perished,first,male,65,0,0,26.55,"Southampton, UK",none,61 to 80
+34,perished,second,male,66,0,0,10.5,"Southampton, UK",none,61 to 80
+673,perished,second,male,70,0,0,10.5,"Southampton, UK",none,61 to 80
+852,perished,third,male,74,0,0,7.775,"Southampton, UK",none,61 to 80
+746,perished,first,male,70,1,1,71,"Southampton, UK",two,61 to 80
+439,perished,first,male,64,1,4,263,"Southampton, UK",five,61 to 80
+631,survived,first,male,80,0,0,30,"Southampton, UK",none,61 to 80
+571,survived,second,male,62,0,0,10.5,"Southampton, UK",none,61 to 80
+484,survived,third,female,63,0,0,9.5875,"Southampton, UK",none,61 to 80
+276,survived,first,female,63,1,0,77.9583,"Southampton, UK",one,61 to 80
+169,perished,first,male,unknown,0,0,25.925,"Southampton, UK",none,unknown
+186,perished,first,male,unknown,0,0,50,"Southampton, UK",none,unknown
+271,perished,first,male,unknown,0,0,31,"Southampton, UK",none,unknown
+285,perished,first,male,unknown,0,0,26,"Southampton, UK",none,unknown
+352,perished,first,male,unknown,0,0,35,"Southampton, UK",none,unknown
+476,perished,first,male,unknown,0,0,52,"Southampton, UK",none,unknown
+528,perished,first,male,unknown,0,0,221.7792,"Southampton, UK",none,unknown
+603,perished,first,male,unknown,0,0,42.4,"Southampton, UK",none,unknown
+634,perished,first,male,unknown,0,0,0,"Southampton, UK",none,unknown
+712,perished,first,male,unknown,0,0,26.55,"Southampton, UK",none,unknown
+816,perished,first,male,unknown,0,0,0,"Southampton, UK",none,unknown
+278,perished,second,male,unknown,0,0,0,"Southampton, UK",none,unknown
+414,perished,second,male,unknown,0,0,0,"Southampton, UK",none,unknown
+467,perished,second,male,unknown,0,0,0,"Southampton, UK",none,unknown
+482,perished,second,male,unknown,0,0,0,"Southampton, UK",none,unknown
+675,perished,second,male,unknown,0,0,0,"Southampton, UK",none,unknown
+733,perished,second,male,unknown,0,0,0,"Southampton, UK",none,unknown
+30,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+46,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+77,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+78,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+88,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+96,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+102,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+122,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+155,perished,third,male,unknown,0,0,7.3125,"Southampton, UK",none,unknown
+159,perished,third,male,unknown,0,0,8.6625,"Southampton, UK",none,unknown
+224,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+236,perished,third,female,unknown,0,0,7.55,"Southampton, UK",none,unknown
+251,perished,third,male,unknown,0,0,7.25,"Southampton, UK",none,unknown
+305,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+336,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+385,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+411,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+416,perished,third,female,unknown,0,0,8.05,"Southampton, UK",none,unknown
+426,perished,third,male,unknown,0,0,7.25,"Southampton, UK",none,unknown
+455,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+465,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+471,perished,third,male,unknown,0,0,7.25,"Southampton, UK",none,unknown
+498,perished,third,male,unknown,0,0,15.1,"Southampton, UK",none,unknown
+512,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+539,perished,third,male,unknown,0,0,14.5,"Southampton, UK",none,unknown
+564,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+565,perished,third,female,unknown,0,0,8.05,"Southampton, UK",none,unknown
+590,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+602,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+612,perished,third,male,unknown,0,0,7.05,"Southampton, UK",none,unknown
+649,perished,third,male,unknown,0,0,7.55,"Southampton, UK",none,unknown
+651,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+657,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+668,perished,third,male,unknown,0,0,7.775,"Southampton, UK",none,unknown
+739,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+740,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+761,perished,third,male,unknown,0,0,14.5,"Southampton, UK",none,unknown
+827,perished,third,male,unknown,0,0,56.4958,"Southampton, UK",none,unknown
+838,perished,third,male,unknown,0,0,8.05,"Southampton, UK",none,unknown
+869,perished,third,male,unknown,0,0,9.5,"Southampton, UK",none,unknown
+879,perished,third,male,unknown,0,0,7.8958,"Southampton, UK",none,unknown
+452,perished,third,male,unknown,1,0,19.9667,"Southampton, UK",one,unknown
+491,perished,third,male,unknown,1,0,19.9667,"Southampton, UK",one,unknown
+640,perished,third,male,unknown,1,0,16.1,"Southampton, UK",one,unknown
+784,perished,third,male,unknown,1,2,23.45,"Southampton, UK",three,unknown
+889,perished,third,female,unknown,1,2,23.45,"Southampton, UK",three,unknown
+177,perished,third,male,unknown,3,1,25.4667,"Southampton, UK",four,unknown
+230,perished,third,female,unknown,3,1,25.4667,"Southampton, UK",four,unknown
+410,perished,third,female,unknown,3,1,25.4667,"Southampton, UK",four,unknown
+486,perished,third,female,unknown,3,1,25.4667,"Southampton, UK",four,unknown
+160,perished,third,male,unknown,8,2,69.55,"Southampton, UK",ten,unknown
+181,perished,third,female,unknown,8,2,69.55,"Southampton, UK",ten,unknown
+202,perished,third,male,unknown,8,2,69.55,"Southampton, UK",ten,unknown
+325,perished,third,male,unknown,8,2,69.55,"Southampton, UK",ten,unknown
+793,perished,third,female,unknown,8,2,69.55,"Southampton, UK",ten,unknown
+847,perished,third,male,unknown,8,2,69.55,"Southampton, UK",ten,unknown
+864,perished,third,female,unknown,8,2,69.55,"Southampton, UK",ten,unknown
+56,survived,first,male,unknown,0,0,35.5,"Southampton, UK",none,unknown
+299,survived,first,male,unknown,0,0,30.5,"Southampton, UK",none,unknown
+508,survived,first,male,unknown,0,0,26.55,"Southampton, UK",none,unknown
+741,survived,first,male,unknown,0,0,30,"Southampton, UK",none,unknown
+18,survived,second,male,unknown,0,0,13,"Southampton, UK",none,unknown
+597,survived,second,female,unknown,0,0,33,"Southampton, UK",none,unknown
+108,survived,third,male,unknown,0,0,7.775,"Southampton, UK",none,unknown
+445,survived,third,male,unknown,0,0,8.1125,"Southampton, UK",none,unknown
+644,survived,third,male,unknown,0,0,56.4958,"Southampton, UK",none,unknown
+693,survived,third,male,unknown,0,0,56.4958,"Southampton, UK",none,unknown
+167,survived,first,female,unknown,0,1,55,"Southampton, UK",one,unknown
+335,survived,first,female,unknown,1,0,133.65,"Southampton, UK",one,unknown
+458,survived,first,female,unknown,1,0,51.8625,"Southampton, UK",one,unknown
+670,survived,first,female,unknown,1,0,52,"Southampton, UK",one,unknown
+348,survived,third,female,unknown,1,0,16.1,"Southampton, UK",one,unknown
+432,survived,third,female,unknown,1,0,16.1,"Southampton, UK",one,unknown
+62,survived,first,female,38,0,0,80,unknown,none,31 to 40
+830,survived,first,female,62,0,0,80,unknown,none,61 to 80
